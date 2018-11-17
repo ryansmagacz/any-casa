@@ -37,8 +37,6 @@ $bp-xl: 1280px;
   }
 
 
-
-
 // BOX SHADOW
 $btn-shadow: 0 8px 15px rgba(0,0,0,.45);
 
@@ -88,6 +86,16 @@ $map: ( 680:4, 860: 6, 1024:8, 1280: 10 );
 
 }
 
+.grid-two-columns > div {
+
+  @include media($min: $bp-medium) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
 
 // END SASS MATH GRID
 
@@ -97,7 +105,7 @@ body {
   }
   
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Halyard Display', Arial, Helvetica, sans-serif;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
   }
 
 //   MOBILE FIRST, THEN BUILD OUT
@@ -141,8 +149,8 @@ body {
 
 .grid-section {
   display: grid;
-
 }
+
 
 .hero-contact-grid {
   grid-template-columns: 1fr;
@@ -199,6 +207,7 @@ body {
       & h1 {
         font-size: 4em;
         line-height: 1.0;
+        font-weight: 800;
         margin-top: 0;
         color: #ffffff;
 
@@ -406,8 +415,8 @@ nav {
   }
   nav {
    width: 100%;
-   z-index: 99999999;
-   position: relative;
+       z-index: 99999999;
+    position: relative;
     padding: $nav-height 0 0px;
     ul {
       display: none;
@@ -561,3 +570,13 @@ nav {
 } 
 
 // END SLIDE UP EFFECT
+
+
+
+
+// FIRST SECTION CSS
+.grid-flex-child-2-col {
+  min-height: fit-content;
+}
+
+
