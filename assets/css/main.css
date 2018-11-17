@@ -365,8 +365,8 @@ form#hero-form .hero-form-label {
 
 form#hero-form input {
   outline: none;
-  padding: .65em 0.3em;
-  width: 100%;
+  padding: .65em 0.65em;
+  width: calc(100% - 1.3em);
   border-radius: 3em;
   border: 0;
   -webkit-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.45);
