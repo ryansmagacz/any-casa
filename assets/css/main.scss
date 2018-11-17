@@ -614,24 +614,26 @@ nav {
 // SECOND SECTION
 
 .second-section div {
-  display: flex;
 
-  justify-content: center;
+
+
 
 
   @include media($min: $bp-smaller) {
-
+    text-align: center;
+    margin: auto 0;
   }
 
 }
 
 .second-section div p {
-  font-size: 2em; 
-  margin: 1em auto 0.5em;
+  font-size: 1.7em; 
+  margin: 0em auto 0.75em;
 
   @include media($min: $bp-smaller) {
     font-size: 2em;
     margin: 1em auto;
+    text-align: center;
   }
 
 }
@@ -641,6 +643,8 @@ nav {
   padding: 0.6em 1em;
   border-radius: 3em;
   box-shadow: 0;
+  margin: auto;
+  text-align: center;
   background:  $lt-blue;
  
   @include transition($quick-trans)
@@ -656,14 +660,43 @@ nav {
     background: $dark-blue;
   }
 
-  &:nth-child(0n+2) a{
-    border: 1px solid red;
+  &:nth-child(0n+2) {
+    border: 2px solid $dark-blue;
+    background: #fff;
+    color: $dark-blue;
+
+    & a{
+      color:  $dark-blue;
+    }
+
+    &:hover {
+      box-shadow: $btn-shadow;
+      background: $dark-blue;
+
+      & a{
+        color:  $white;
+      }
+    }
+
   }
 }
 
+.second-section {
+  justify-content: center;
+  align-content: center;
+  padding: 30px 10px;
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+
+
+
 // VALUE PROPS CSS
 .value-props-grid {
-  padding: 1em 2em;
+  padding: 1em 1em;
 
   @include media($min: $bp-medium) {
     padding: 1em 4em;
