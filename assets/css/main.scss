@@ -57,11 +57,9 @@ $quick-trans: all 0.25s ease-out;
 
 // SASS MATH GRID STUFF
 #grid > div {
-  height: 25px;
-  border: 1px solid;
+  min-height: 50px;
   box-sizing: border-box;
   float: left;
-  background: #ccc;
 }
 
 @for $i from 1 through 10 {
@@ -108,6 +106,16 @@ body {
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
   }
 
+.text-center {
+  text-align: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+
+
 //   MOBILE FIRST, THEN BUILD OUT
 
   .site-wrapper {
@@ -132,6 +140,8 @@ body {
   }
   
   .content {
+
+    display: grid;
     grid-area: content;
     grid-column: 1 / span 3;
     background: transparent;
@@ -579,4 +589,129 @@ nav {
   min-height: fit-content;
 }
 
+.center-text-flex {
+  display: flex;
+  background: $white;
+  text-align: center;
 
+  & h1 {
+    text-align: center; 
+    margin: auto;
+    padding: 2em 1em 0em; 
+    font-size: 1.6em;
+
+    @include media($min: $bp-smaller) {
+      font-size: 2em;
+    }
+
+    @include media($min: $bp-xl) {
+      font-size: 2.8em;
+    }
+
+  }
+}
+
+// SECOND SECTION
+
+.second-section div {
+  display: flex;
+
+  justify-content: center;
+
+
+  @include media($min: $bp-smaller) {
+
+  }
+
+}
+
+.second-section div p {
+  font-size: 2em; 
+  margin: 1em auto 0.5em;
+
+  @include media($min: $bp-smaller) {
+    font-size: 2em;
+    margin: 1em auto;
+  }
+
+}
+
+.second-section > div > button{
+  font-size: 1.3em;
+  padding: 0.6em 1em;
+  border-radius: 3em;
+  box-shadow: 0;
+  background:  $lt-blue;
+ 
+  @include transition($quick-trans)
+
+  & a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+  }
+  
+  &:hover {
+    box-shadow: $btn-shadow;
+    background: $dark-blue;
+  }
+
+  &:nth-child(0n+2) a{
+    border: 1px solid red;
+  }
+}
+
+// VALUE PROPS CSS
+.value-props-grid {
+  padding: 1em 2em;
+
+  @include media($min: $bp-medium) {
+    padding: 1em 4em;
+  }
+
+  @include media($min: $bp-xl) {
+    padding: 1.5em 10em;
+    
+  }
+}
+
+.value-prop-item {
+  margin: auto;
+  text-align: center;
+  margin-top: 3em;
+
+
+
+  @include media($min: $bp-medium) {
+    margin: 2em auto;
+  }
+}
+
+.value-prop-inner {
+  border: 1px solid green;
+
+
+  & img {
+
+  }
+
+  & h3 {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1em;
+    text-align: center;
+    margin: 0.5em;
+
+    @include media($min: $bp-medium) {
+      font-size: 25px;
+    }
+  }
+
+  & p {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1em;
+    text-align: center;
+
+  }
+}
