@@ -5,6 +5,8 @@ $lt-green: #43cea2;
 $red: #c10000;
 $white: #ffffff;
 $black: #000000;
+$aqua-lt: #00e6e6;
+$aqua-dark: #01cccc;
 
 // Navigation Variables
 $content-width: 1000px;
@@ -12,7 +14,7 @@ $breakpoint: 799px;
 $nav-height: 70px;
 $nav-background: #fff;
 $nav-font-color: #000;
-$link-hover-color: $lt-green;
+$link-hover-color: $aqua-lt;
 
 // BREAKPOINTS
 // Breakpoints
@@ -186,9 +188,10 @@ body {
   @include media($min: $bp-medium) {
     grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
     background: url('../img/hero-bg-1650x.png');
-    background-size: cover;
+    background-size: auto;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
   }
 
   & .hero-title{
@@ -196,9 +199,10 @@ body {
     margin: auto;
     width: 100%;
     background: url('../img/hero-bg-1650x.png');
-    background-size: cover;
-    background-position: center;
+    background-size: auto;
+    background-position: bottom;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     
 
     & p {
@@ -219,7 +223,14 @@ body {
         line-height: 1.0;
         font-weight: 800;
         margin-top: 0;
+        margin-bottom: 0;
+        text-shadow:-4px 4px 0px $aqua-lt;
         color: #ffffff;
+        @include transition(all .4s ease-in-out);
+
+        &:hover {
+          text-shadow:-4px 4px 0px $aqua-lt,-8px 8px 0px $aqua-dark;
+        }
 
         @include media($min: $bp-small) {
           font-size: 6em;
@@ -227,9 +238,11 @@ body {
         }
 
         @include media($min: $bp-medium) {
+          text-shadow:-4px 4px 0px $aqua-dark;
           font-size: 6em;
           line-height: 1.0;
           text-align: left;
+          margin-bottom: 0.3em;
           
         }
       }
@@ -244,7 +257,7 @@ body {
 
   & .hero-contact-form {
     font-family: "lato", Arial, Helvetica, sans-serif;
-    background: rgba(19,43,64,0.85);
+    background: linear-gradient(to top, #182129, rgba(19,43,64,0.65));
     padding: 2.0rem 1.0rem;
 
     & h3 {
@@ -304,25 +317,26 @@ display: grid;
 
   & button {
     margin-top: 1em;
-    width: 100%;
+    width: 99.9%;
     text-align: center; 
     padding: .8em 0;
+    border: 0;
     font-family: "Lato", Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 1.5em;
     border-radius: 3em;
     @include transition($quick-trans);
-    background: linear-gradient(to top, #0aff85, #14f9a7);
-    color: $dark-blue;
-    opacity: 0.8;
+    background: $aqua-lt;
+    color: $white;
+    opacity: 0.88;
     cursor: pointer;
     
 
     &:hover {
       box-shadow: $btn-shadow;
-      background: linear-gradient(to top, #0aff85, #14f9a7);
       opacity: 1;
+      
     }
 }
 }
@@ -721,7 +735,7 @@ nav {
 }
 
 .value-prop-inner {
-  border: 1px solid green;
+  // border: 1px solid green;
 
 
   & img {
