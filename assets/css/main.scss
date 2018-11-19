@@ -5,7 +5,8 @@ $lt-green: #43cea2;
 $red: #c10000;
 $white: #ffffff;
 $black: #000000;
-$aqua-lt: #00e6e6;
+// $aqua-lt: #00e6e6;
+$aqua-lt: #00f3ff;
 $aqua-dark: #01cccc;
 
 // Navigation Variables
@@ -41,6 +42,7 @@ $bp-xl: 1280px;
 
 // BOX SHADOW
 $btn-shadow: 0 8px 15px rgba(0,0,0,.45);
+$small-shadow: 0 4px 10px rgba(0,0,0,0.30);
 
 // TRANSITION 
 $quick-trans: all 0.25s ease-out;
@@ -181,10 +183,6 @@ body {
   text-align: center;
   min-height: 27em;
 
-  // @include media($min: $bp-small) {
-  //   grid-template-columns: 1fr;
-  // }
-
   @include media($min: $bp-medium) {
     grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
     background: url('../img/hero-bg-1650x.png');
@@ -267,15 +265,17 @@ body {
 
     & h3 {
       font-family: "lato", Arial, Helvetica, sans-serif;
-      font-size: 1em;
-      color: #000;
-      font-weight: 500;
+      font-size: 1.5em;
+      color: #fff;
+      font-weight: 600;
       text-transform: uppercase;
       letter-spacing: 0.1em;
-      margin: 0em 0 .5em;
+      margin: 0em 0 1em;
 
         @include media($min: $bp-medium) {
-          font-size: 1.55em;
+          font-size: 1.5em;
+          color: #000000;
+          font-weight: 600;
         }
 
     }
@@ -300,9 +300,6 @@ text-align: left;
 width: 100%;
 color: #fff;
 display: grid;
-
-
-
 
   & p {
     margin: .2em .2em;
@@ -348,7 +345,7 @@ display: grid;
 
       
     }
-}
+  }
 }
 
 

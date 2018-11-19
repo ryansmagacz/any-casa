@@ -296,13 +296,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-section .hero-title h1 span {
-  text-shadow: -2px 2px 0px #00e6e6;
+  text-shadow: -2px 2px 0px #00f3ff;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
 .hero-section .hero-title h1 span:hover {
-  text-shadow: -3px 3px 0px #00e6e6, -6px 6px 0px #01cccc;
+  text-shadow: -3px 3px 0px #00f3ff, -6px 6px 0px #01cccc;
 }
 
 @media screen and (min-width: 720px) {
@@ -339,17 +339,19 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero-section .hero-contact-form h3 {
   font-family: "lato", Arial, Helvetica, sans-serif;
-  font-size: 1em;
-  color: #000;
-  font-weight: 500;
+  font-size: 1.5em;
+  color: #fff;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  margin: 0em 0 .5em;
+  margin: 0em 0 1em;
 }
 
 @media screen and (min-width: 860px) {
   .hero-section .hero-contact-form h3 {
-    font-size: 1.55em;
+    font-size: 1.5em;
+    color: #000000;
+    font-weight: 600;
   }
 }
 
@@ -408,7 +410,7 @@ form#hero-form button {
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
   -webkit-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
-  background: #00e6e6;
+  background: #00f3ff;
   color: #ffffff;
   opacity: 0.88;
   cursor: pointer;
@@ -487,7 +489,7 @@ nav ul li a:visited {
 
 nav ul li a:hover,
 nav ul li a:visited:hover {
-  background: #00e6e6;
+  background: #00f3ff;
   color: #000;
 }
 
@@ -699,11 +701,11 @@ nav ul li ul li a {
 }
 
 .underline--magical {
-  background: #00e6e6;
+  background: #00f3ff;
   /* fallback for old browsers */
   /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, right top, left top, from(#00e6e6), to(#01cccc));
-  background: linear-gradient(to left, #00e6e6, #01cccc);
+  background: -webkit-gradient(linear, right top, left top, from(#00f3ff), to(#01cccc));
+  background: linear-gradient(to left, #00f3ff, #01cccc);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-repeat: no-repeat;
   background-size: 99% .2em;
