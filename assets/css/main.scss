@@ -196,16 +196,22 @@ body {
     padding: 6em 0em;
     margin: auto;
     width: 100%;
-    background: url('../img/hero-bg-1650x.png');
-    background-size: auto;
-    background-position: bottom;
+    background: url('../img/hero-bg-750x.png');
+    background-size: stretch;
+    background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    // background-attachment: fixed;
     
+    
+    @include media($min: $bp-medium) {
+      background: transparent;
+      padding-left: 30px;
+      text-align: left;
+    }
+
 
     & p {
       display: none;
-
       @include media($min: $bp-medium) {
         font-size: 1.5em;
       color: #ffffff;
@@ -216,22 +222,22 @@ body {
 
     }
 
-      & h1 {
-        font-size: 4em;
-        line-height: 1.0;
-        font-weight: 800;
-        margin-top: 0;
-        margin-bottom: 0;
-        color: #ffffff;
+    & h1 {
+      font-size: 4em;
+      line-height: 1.0;
+      font-weight: 800;
+      margin-top: 0;
+      margin-bottom: 0;
+      color: #ffffff;
 
-        & span {
-          text-shadow:-2px 2px 0px $aqua-lt;
-          @include transition(all .3s ease-in-out);
+      & span {
+        text-shadow:-2px 2px 0px $aqua-lt;
+        @include transition(all .3s ease-in-out);
 
-          &:hover {
-            text-shadow:-3px 3px 0px $aqua-lt,-6px 6px 0px $aqua-dark;
-          }
+        &:hover {
+          text-shadow:-3px 3px 0px $aqua-lt,-6px 6px 0px $aqua-dark;
         }
+      }
       
       
 
@@ -250,11 +256,6 @@ body {
         }
       }
 
-      @include media($min: $bp-medium) {
-        background: transparent;
-        padding-left: 30px;
-        text-align: left;
-      }
 
   }
 
