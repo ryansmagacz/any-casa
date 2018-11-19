@@ -33,9 +33,7 @@
     
     <!-- CSS Files -->
     <link rel="stylesheet" href="assets/css/main.css">
-
     
-
 </head>
 <body>
 <div class="site-wrapper">
@@ -95,7 +93,7 @@
         <div class="hero-section">
 
             <div class="hero-title">
-                <h1 class="slide-up-fade-in hero-h1">ER Property Solutions</h1>
+                <h1 class="slide-up-fade-in hero-h1"><span>ER Property Solutions</span></h1>
                 <p class="slide-up-fade-in hero-p">Property management solutions in Los Angeles. Flexible management solutions from trusted property management professionals. Maximize your rental income, and leave the property management to us.</p>
             </div>
 
@@ -188,13 +186,26 @@
         </div>
         <!-- END OF SECOND SECTION -->
         <!-- THIRD SECTION -->
-        <div id="grid" class="cell-1 cell-680-2 second-section" style="background: #fafafa;">
+        <div id="grid" class="cell-1 cell-680-2 second-section" style="background: url(assets/img/hero-bg-1650x.png);
+        position: relative;
+        background-attachment: fixed;
+        background-position: center;
+        z-index: 1;position: relative">
+            <section class="bgchange"></section>
             <div>
                 <p>Ready to get started, Papi?</p>
             </div>
             <div style="">
-                <button><a href="" style="">Yes Papi!</a></button>
-                <button><a href="" style="">I'm Not Sure Papi</a></button>
+                <!-- <button><a href="" style="">Yes Papi!</a></button>
+                <button><a href="" style="">I'm Not Sure Papi</a></button> -->
+                <h2>Tell us about your property property type</h2>
+                <select>
+                    <option>Single Family Home/Condominium</option>
+                    <option>Multi-plex</option>
+                    <option>Small Apartment Building (under 20 units)</option>
+                    <option>Large Apartment Building (20+ units)</option>
+                    <option>Commercial</option>
+                </select>
             </div>
         </div>
         <!-- END THIRD SECTION -->
