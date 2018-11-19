@@ -94,11 +94,11 @@
 
             <div class="hero-title">
                 <h1 class="slide-up-fade-in hero-h1"><span>ER Property Solutions</span></h1>
-                <p class="slide-up-fade-in hero-p">Property management solutions in Los Angeles. Flexible management solutions from trusted property management professionals. Maximize your rental income, and leave the property management to us.</p>
+                <p class="slide-up-fade-in hero-p">Maximize your rental income, and leave the property management to us.</p>
             </div>
 
             <div class="hero-contact-form">
-                <h3 class="contact-form-title">Let us know how we can help</h3>
+                <h3 class="contact-form-title">Get your free quote today</h3>
                 <form name="contact" method="POST" id="hero-form" netlify>
                     <!-- <p>What can we help you with?
                         <select style="border-radius: 4px; border: 1 px solid red; padding: 4px 8px;">
@@ -123,13 +123,24 @@
                         <input type="tel" name="name" id="first_name" placeholder="Phone Number" value>  
                     </p>
 
-                    <p>
+                    <p class="pill-select">
+                        <select style="outline: 0;
+                        width: calc(100% - 1.3em); border: 0; background: transparent; width: 100% !important; height: 45px;">
+                            <option value="" disabled selected>Select your property type</option>
+                            <option>Single Family Home/Townhome/Condominium</option>
+                            <option>Multi-plex</option>
+                            <option>Small Apartment Building (under 10 units)</option>
+                            <option>Large Apartment Building (10+ units)</option>
+                            <option>Commercial/Business Building</option>
+                            <option>Vacation Rental (includes Airbnb/VRBO)</option>
+                            <option>Other/Not Listed</option>
+                        </select>
                         <!-- <label class="hero-form-label" for="message">Message: </label> -->
-                        <input type="text" name="message" id="message" placeholder="Message" value> 
+                        <!-- <input type="text" name="message" id="message" placeholder="Message" value>  -->
                     </p>
                 </div>
                     
-                        <button type="submit">Send</button>
+                        <button type="submit">REQUEST QUOTE NOW</button>
 
                 </form>
             </div>
@@ -181,31 +192,32 @@
         <!-- second section -->
         <div id="grid" class="cell-1 cell-680-1 fourth-section">
             <div class="center-text-flex">
-                <h1>Maximize your rental income</h1>
+                <h2>Maximize your rental income</h2>
             </div>
+
+
+
         </div>
         <!-- END OF SECOND SECTION -->
-        <!-- THIRD SECTION -->
-        <div id="grid" class="cell-1 cell-680-2 second-section" style="background: url(assets/img/hero-bg-1650x.png);
-        position: relative;
-        background-attachment: fixed;
-        background-position: center;
-        z-index: 1;position: relative">
+        <!-- THIRD SECTION - CTA -->
+        <div id="grid" class="cell-1 cell-680-2 slim-cta-section">
             <section class="bgchange"></section>
             <div>
                 <p>Ready to get started, Papi?</p>
             </div>
-            <div style="">
+            <div class="" style="">
                 <!-- <button><a href="" style="">Yes Papi!</a></button>
                 <button><a href="" style="">I'm Not Sure Papi</a></button> -->
-                <h2>Tell us about your property property type</h2>
-                <select>
-                    <option>Single Family Home/Condominium</option>
+                <h2>Tell us about your property</h2>
+                <span>My property is a </span><select>
+                    <option>Single Family Home/Townhome/Condominium</option>
                     <option>Multi-plex</option>
-                    <option>Small Apartment Building (under 20 units)</option>
-                    <option>Large Apartment Building (20+ units)</option>
-                    <option>Commercial</option>
+                    <option>Small Apartment Building (under 10 units)</option>
+                    <option>Large Apartment Building (10+ units)</option>
+                    <option>Commercial/Business Building</option>
+                    <option>Vacation Rental (includes Airbnb/VRBO)</option>
                 </select>
+                <button>REQUEST FREE QUOTE(WE JUST NEED A LITTLE BIT MORE INFORMATION BEFORE WE CAN GIVE YOU AN ACCURATE QUOTE)</button>
             </div>
         </div>
         <!-- END THIRD SECTION -->

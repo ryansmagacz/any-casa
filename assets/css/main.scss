@@ -268,7 +268,7 @@ body {
     & h3 {
       font-family: "lato", Arial, Helvetica, sans-serif;
       font-size: 1em;
-      color: #fff;
+      color: #000;
       font-weight: 500;
       text-transform: uppercase;
       letter-spacing: 0.1em;
@@ -281,10 +281,12 @@ body {
     }
 
     @include media($min: $bp-medium) {
-        margin: auto 2em;
-        padding: 2.0rem 1.6rem;
-        border-radius: 5px;
-        box-shadow: 0 4px 13px rgba(0,0,0,0.7);
+      background: linear-gradient(to top, rgba(255,255,255,0.75), rgba(255,255,255,0.65));
+      margin: auto 2em;
+      padding: 2.0rem 1.6rem;
+      border-radius: 0.25em;
+      border: 0;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
         
     }
   }
@@ -331,6 +333,7 @@ display: grid;
     letter-spacing: 2px;
     font-size: 1.5em;
     border-radius: 3em;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.16);;
     @include transition($quick-trans);
     background: $aqua-lt;
     color: $white;
@@ -339,15 +342,25 @@ display: grid;
     
 
     &:hover {
-      box-shadow: $btn-shadow;
       opacity: 1;
+      color: #000000;
+      box-shadow: $btn-shadow;
+
       
     }
 }
 }
 
 
-
+.pill-select {
+  padding: 0em 0.3em;
+  outline: none;
+  border-radius: 3em;
+  border: 0;
+  box-shadow: $btn-shadow;
+  background: #ffffff;
+  color: #000000;
+}
 // NAVBAR CSS
 
 // Outer navigation wrapper
@@ -608,12 +621,12 @@ nav {
   height: 100%;
   top: 0;
   left: 0;
-  background: linear-gradient(55deg, rgba(255,255,255,.3), rgba(255,255,255,.15), rgba(255,255,255,.3), rgba(255,255,255,.5));
+  background: linear-gradient(155deg, rgba(0,0,0,.3), rgba(255,255,255,.15), rgba(255,255,255,.3), rgba(0,0,0,.15));
   background-size: 400% 400%;
   z-index: -1;
-	-webkit-animation: bgchange 12s ease infinite;
-	-moz-animation: bgchange 12s ease infinite;
-  animation: bgchange 12s ease infinite;
+	-webkit-animation: bgchange 8s ease infinite;
+	-moz-animation: bgchange 8s ease infinite;
+  animation: bgchange 8s ease infinite;
 }
 
 @-webkit-keyframes bgchange {
@@ -652,6 +665,33 @@ nav {
 	}
 }
 
+// UNDERLINE MAGIC
+
+.underline--magical {
+  background: $aqua-lt;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, $aqua-lt, $aqua-dark);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, $aqua-lt, $aqua-dark); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  
+      background-repeat: no-repeat;
+      background-size: 99% .2em;
+      background-position: 33% 91%;
+      transition: background-size 0.2s ease-in;
+  
+    &:hover {
+      color: #000;
+      background-size: 100% 100%;
+      & a { color: #000; }
+    }
+  
+    @media (max-width: 576px) {
+      background: transparent;
+      text-align: center;
+      padding: 10px 10px;
+    }
+  
+  }
+
 
 
 
@@ -666,10 +706,10 @@ nav {
   background: $white;
   text-align: center;
 
-  & h1 {
+  & h1, h2 {
     text-align: center; 
     margin: auto;
-    padding: 2em 1em 0em; 
+    padding: 2em 1em 2em; 
     font-size: 1.6em;
 
     @include media($min: $bp-smaller) {
@@ -698,7 +738,7 @@ nav {
 
 }
 
-.second-section div p {
+.second-section > div > p {
   font-size: 1.7em; 
   margin: 0em auto 0.75em;
 
@@ -819,4 +859,15 @@ nav {
     text-align: center;
 
   }
+}
+
+
+// SLIM CTA SECTION
+.slim-cta-section {
+  position: relative;
+  background: url(../img/hero-bg-1650x.png);
+  background-attachment: fixed;
+  background-position: center;
+  z-index: 1;
+  
 }
