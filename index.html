@@ -30,6 +30,9 @@
 
     <!-- normalize CSS -->
     <link rel="stylesheet" href="assets/css/normalize.css">
+
+    <!-- ANIMATE SCROLL CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <!-- CSS Files -->
     <link rel="stylesheet" href="assets/css/main.css">
@@ -37,6 +40,7 @@
 </head>
 <body>
 <div class="site-wrapper">
+        
     <!-- NAVBAR -->
     <header class="navigation">
         <div class="nav-container">
@@ -192,7 +196,7 @@
         <!-- second section -->
         <div id="grid" class="cell-1 cell-680-1 fourth-section">
             <div class="center-text-flex">
-                <h2>Maximize your rental income</h2>
+                <h2 data-aos="zoom-in" data-aos-duration="2000">Maximize your rental income</h2>
             </div>
 
 
@@ -200,14 +204,12 @@
         </div>
         <!-- END OF SECOND SECTION -->
         <!-- THIRD SECTION - CTA -->
-        <div id="grid" class="cell-1 cell-680-2 slim-cta-section">
+        <!-- <div id="grid" class="cell-1 cell-680-2 slim-cta-section">
             <section class="bgchange"></section>
             <div>
                 <p>Ready to get started, Papi?</p>
             </div>
             <div class="" style="">
-                <!-- <button><a href="" style="">Yes Papi!</a></button>
-                <button><a href="" style="">I'm Not Sure Papi</a></button> -->
                 <h2>Tell us about your property</h2>
                 <span>My property is a </span><select>
                     <option>Single Family Home/Townhome/Condominium</option>
@@ -219,7 +221,7 @@
                 </select>
                 <button>REQUEST FREE QUOTE(WE JUST NEED A LITTLE BIT MORE INFORMATION BEFORE WE CAN GIVE YOU AN ACCURATE QUOTE)</button>
             </div>
-        </div>
+        </div> -->
         <!-- END THIRD SECTION -->
         <!-- START FOURTH SECTION -->
         
@@ -245,8 +247,14 @@
 <!-- SCRIPTS -->
 <!-- jQuery -->
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <!-- Main JS -->
 <script type="text/javascript" src="assets/js/main.js"></script>
+
+<script>
+    AOS.init();
+  </script>
 
 </body>
 </html>

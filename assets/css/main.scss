@@ -42,7 +42,7 @@ $bp-xl: 1280px;
 
 // BOX SHADOW
 $btn-shadow: 0 8px 15px rgba(0,0,0,.45);
-$small-shadow: 0 4px 10px rgba(0,0,0,0.30);
+$small-shadow: 0 4px 8px rgba(0,0,0,0.30);
 
 // TRANSITION 
 $quick-trans: all 0.25s ease-out;
@@ -197,7 +197,6 @@ body {
     margin: auto;
     width: 100%;
     background: url('../img/hero-bg-750x.png');
-    background-size: stretch;
     background-position: center;
     background-repeat: no-repeat;
     // background-attachment: fixed;
@@ -212,14 +211,13 @@ body {
 
     & p {
       display: none;
+
       @include media($min: $bp-medium) {
         font-size: 1.5em;
-      color: #ffffff;
-      display: block;
-      margin: 0 20px 0 0;
-        
+        color: #ffffff;
+        display: block;
+        margin: 0 20px 0 0;
       }
-
     }
 
     & h1 {
@@ -261,7 +259,7 @@ body {
 
   & .hero-contact-form {
     font-family: "lato", Arial, Helvetica, sans-serif;
-    background: linear-gradient(to top, #182129, rgba(19,43,64,0.65));
+    background: linear-gradient(to top, rgba(255, 255, 255,1), rgba(19, 43, 64, 0.65));
     padding: 2.0rem 1.0rem;
 
     & h3 {
@@ -282,7 +280,7 @@ body {
     }
 
     @include media($min: $bp-medium) {
-      background: linear-gradient(to top, rgba(255,255,255,0.75), rgba(255,255,255,0.65));
+      background: linear-gradient(to top, rgba(255,255,255,0.75), rgba(255,255,255,0.85));
       margin: auto 2em;
       padding: 2.0rem 1.6rem;
       border-radius: 0.25em;
@@ -316,7 +314,7 @@ display: grid;
     width: calc(100% - 1.3em);
     border-radius: 3em;
     border: 0;
-    box-shadow: $btn-shadow;
+    box-shadow: $small-shadow;
     color: #000000;
   }
 
@@ -331,16 +329,14 @@ display: grid;
     letter-spacing: 2px;
     font-size: 1.5em;
     border-radius: 3em;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.16);;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.26);;
     @include transition($quick-trans);
     background: $aqua-lt;
     color: $white;
-    opacity: 0.88;
     cursor: pointer;
     
 
     &:hover {
-      opacity: 1;
       color: #000000;
       box-shadow: $btn-shadow;
 
@@ -355,7 +351,7 @@ display: grid;
   outline: none;
   border-radius: 3em;
   border: 0;
-  box-shadow: $btn-shadow;
+  box-shadow: $small-shadow;
   background: #ffffff;
   color: #000000;
 }
@@ -408,13 +404,10 @@ nav {
         color: $nav-font-color;
         text-decoration: none;
         @include transition($quick-trans);
-        &:hover {
-          background: $link-hover-color;
-          color: $nav-font-color;
-        }
+        
         &:not(:only-child):after {
           padding-left: 4px;
-          content: ' ▾';
+          // content: ' ▾';
         }
       } // Dropdown list
       ul li {
@@ -520,6 +513,27 @@ nav {
     }
   }
 }
+
+
+.nav-list li a:hover:after {
+  width: 100%;
+  background-color: $aqua-lt;
+}
+.nav-list li a:after {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: transparent;
+    transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+
+  }
 
 // END OF NAVBAR CSS
 
