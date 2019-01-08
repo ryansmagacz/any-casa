@@ -553,9 +553,6 @@ nav ul li ul li a {
 .hero-grid {
   background: url("../img/hero-bg-1650x.png");
   background-size: auto;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   height: 100vh;
 }
 
@@ -563,6 +560,9 @@ nav ul li ul li a {
   .hero-grid {
     max-height: 75vh;
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
 }
 
