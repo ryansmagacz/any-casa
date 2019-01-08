@@ -45,7 +45,7 @@
             <header class="navigation">
                 <div class="nav-container">
                     <div class="brand">
-                    <a href="#!">ER Property Solutions</a>
+                        <a href="index.html"><img src="assets/img/ER-Property-Solutions---Logo-blue.png" alt="ER Property Solutions Los Angeles Logo"></a>
                     </div>
                     <nav>
                     <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
@@ -267,6 +267,7 @@
 
 
 
+
 <!-- POP UP -->
 <div id="popup">
         <div style="position: relative; margin: auto;display: grid;height: 100vh;">
@@ -276,8 +277,8 @@
                 <div class="popup-box-content">
                     <div class="popupimg"></div>
                     <div class="popuptext no-margin" style="">
-                        <h3 class="text-center">Ready to maximize your rental income?</h3>
-                        <p>Enter your information below, and a team member will contact you in 24 hours.</p>
+                        <h3 class="text-center">You're one step closer to a better life</h3>
+                        <p>Enter your information below, and a team member will contact you in 24 hours about our property management rates.</p>
                         <!-- <p class="text-left-center-mobile lato">Affordable property management in Los Angeles from experienced professionals</p> -->
                         <form action="" name="quote-popup-form" method="POST" id="quote-popup-form" netlify>
                             <div class="grid-section popup-contact-form-grid">
@@ -310,7 +311,6 @@
               
 
 
-
 <!-- SCRIPTS -->
 <!-- jQuery -->
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
@@ -329,15 +329,10 @@
     });
 </script>
 
+
 <script>
         $(document).ready(function() {
-          if(localStorage.getItem('popState') != 'shown'){
-            $("#popup").delay(3000).fadeIn();
-            localStorage.setItem('popState','shown')
-          }else{
-            console.log('alreadyseentit');
-          }
-      
+
           $('#popup-close').click(function(e) // You are clicking the close button
                                   {
             $('#popup').fadeOut(); // Now the pop up is hiden.
@@ -354,7 +349,6 @@
           
         });
 </script>
-
 
 </body>
 </html>

@@ -45,7 +45,7 @@
             <header class="navigation">
                 <div class="nav-container">
                     <div class="brand">
-                    <a href="#!">ER Property Solutions</a>
+                        <a href="index.html"><img src="assets/img/ER-Property-Solutions---Logo-blue.png" alt="ER Property Solutions Los Angeles Logo"></a>
                     </div>
                     <nav>
                     <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
@@ -88,12 +88,6 @@
                         <h1 class="h1 text-center" style="text-shadow: 2px 2px rgba(255,255,255,1);">CONTACT US</h1>
                     </div>
 
-                    <div class="grid-section aj-center content-width mall-section-padding">
-                        
-                        <p class="text-left-center-mobile margin-2">Through hard work, dedication, and experience, ER Property Solutions has established itself as a premier property management company in Los Angeles, offering Southern California property owners a variety of property management solutions. Whether it’s troublesome tenants, low rents, on-site issues, or code violations. Let ER Property Solutions take care of you.</p>
-                        
-                    </div>
-
                     <div class="grid-section aj-center content-width">
                         
                         <p class="text-left-center-mobile margin-2">Through hard work, dedication, and experience, ER Property Solutions has established itself as a premier property management company in Los Angeles, offering Southern California property owners a variety of property management solutions. Whether it’s troublesome tenants, low rents, on-site issues, or code violations. Let ER Property Solutions take care of you.</p>
@@ -101,6 +95,53 @@
                     </div>
                 </div>
             </div>
+
+            <div class="section">
+                    <div class="grid services-contact-form">
+                            <h3 class="contact-form-title text-center">Get your free quote today!</h3>
+                            <form name="services-form" method="POST" id="services-form" netlify>
+                                <!-- <p>What can we help you with?
+                                    <select style="border-radius: 4px; border: 1 px solid red; padding: 4px 8px;">
+                                        <option value="property_management">Property Management</option>
+                                        <option value="tenant_services">Tenant Services</option>
+                                        <option value="maintenance">Maintenance</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </p> -->
+                                <div class="grid-section popup-contact-form-grid">
+                                    <p>
+                                        <input type="text" name="name" id="name" placeholder="Name" value required>  
+                                    </p>
+        
+                                    <p>
+                                        <!-- <label class="hero-form-label" for="email">Email: </label> -->
+                                        <input type="email" name="email" id="email" placeholder="Email Address" value required>  
+                                    </p>
+        
+                                    <p>
+                                        <!-- <label class="hero-form-label" for="first_name">Phone: </label> -->
+                                        <input type="tel" name="name" id="phone" placeholder="Phone Number (optional)" value>  
+                                    </p>
+            
+                                    <p class="pill-select">
+                                        <select style="outline: 0;border: 1px solid #000; background: transparent; width: 100% !important; height: 45px;margin-bottom: 1rem;">
+                                            <option value="" disabled selected>Select your property type</option>
+                                            <option>Single Family Home/Townhome/Condominium</option>
+                                            <option>Multi-plex</option>
+                                            <option>Small Apartment Building (under 10 units)</option>
+                                            <option>Large Apartment Building (10+ units)</option>
+                                            <option>Commercial/Business Building</option>
+                                            <option>Vacation Rental (includes Airbnb/VRBO)</option>
+                                            <option>Other/Not Listed</option>
+                                        </select>
+                                        <!-- <label class="hero-form-label" for="message">Message: </label> -->
+                                        <!-- <input type="text" name="message" id="message" placeholder="Message" value>  -->
+                                    </p>
+                                </div>
+                                <button type="submit" class="section green-blue-primary-button">REQUEST QUOTE NOW</button>
+                            </form>
+                    </div>
+                </div>
             
             
             <!-- END OF CONTENT WRAPPER -->
@@ -129,50 +170,6 @@
 
 
 
-<!-- POP UP -->
-<div id="popup">
-        <div style="position: relative; margin: auto;display: grid;height: 100vh;">
-            <div class="popup-box">
-                <div class="close-button-div" id="popup-close"><span>CLOSE</span></div>
-            
-                <div class="popup-box-content">
-                    <div class="popupimg"></div>
-                    <div class="popuptext no-margin" style="">
-                        <h3 class="text-center">Ready to maximize your rental income?</h3>
-                        <p>Enter your information below, and a team member will contact you in 24 hours.</p>
-                        <!-- <p class="text-left-center-mobile lato">Affordable property management in Los Angeles from experienced professionals</p> -->
-                        <form action="" name="quote-popup-form" method="POST" id="quote-popup-form" netlify>
-                            <div class="grid-section popup-contact-form-grid">
-                                <p>
-                                    <input type="text" name="name" id="name" placeholder="Name" value required>  
-                                </p>
-    
-                                <p>
-                                    <!-- <label class="hero-form-label" for="email">Email: </label> -->
-                                    <input type="email" name="email" id="email" placeholder="Email Address" value required>  
-                                </p>
-    
-                                <p>
-                                    <!-- <label class="hero-form-label" for="first_name">Phone: </label> -->
-                                    <input type="tel" name="name" id="phone" placeholder="Phone Number (optional)" value>  
-                                </p>
-    
-                        </div>
-                            
-                        <button type="submit" class="section green-blue-primary-button">REQUEST QUOTE</button>
-    
-                        </form>
-                    </div>
-                </div>
-            </div>
-    
-            
-        </div>
-    </div>
-              
-
-
-
 <!-- SCRIPTS -->
 <!-- jQuery -->
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
@@ -189,31 +186,6 @@
         mirror: false, // whether elements should animate out while scrolling past them
 
     });
-</script>
-<script>
-        $(document).ready(function() {
-          if(localStorage.getItem('popState') != 'shown'){
-            $("#popup").delay(3000).fadeIn();
-            localStorage.setItem('popState','shown')
-          }else{
-            console.log('alreadyseentit');
-          }
-      
-          $('#popup-close').click(function(e) // You are clicking the close button
-                                  {
-            $('#popup').fadeOut(); // Now the pop up is hiden.
-          });
-      
-      
-          $('.ih-popup-subscribe').click(function() {
-            $('#popup').fadeOut();
-          });
-
-          $('#footer-yes').click(function() {
-            $('#popup').fadeIn();
-          });
-          
-        });
 </script>
 
 

@@ -255,7 +255,7 @@ hr {
 }
 
 .green-blue-primary-button:hover {
-  background: #155084;
+  background: #0062b0;
   color: #ffffff;
 }
 
@@ -434,6 +434,12 @@ hr {
   text-decoration: none;
 }
 
+.brand a img {
+  margin: 0 0 5px;
+  max-width: 80px;
+  vertical-align: middle;
+}
+
 .nav-container {
   max-width: 66rem;
   margin: 0 auto;
@@ -461,6 +467,9 @@ nav ul li a:visited {
   line-height: 70px;
   background: #fff;
   color: #000;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1rem;
   text-decoration: none;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
@@ -565,7 +574,7 @@ nav ul li ul li a {
 }
 
 #nav-toggle.active span {
-  background-color: transparent;
+  background: transparent;
 }
 
 #nav-toggle.active span:before, #nav-toggle.active span:after {
@@ -584,7 +593,8 @@ nav ul li ul li a {
 
 .nav-list li a:hover:after {
   width: 100%;
-  background-color: #00ff66;
+  background: -webkit-gradient(linear, left top, right top, from(#67ffa4), to(#00f3ff));
+  background: linear-gradient(to right, #67ffa4, #00f3ff);
 }
 
 .nav-list li a:after {
@@ -595,7 +605,7 @@ nav ul li ul li a {
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: transparent;
+  background: transparent;
   transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
   -webkit-transition: all .3s ease-in-out;
@@ -883,8 +893,8 @@ nav ul li ul li a {
 
 .top-relative .img-div ul li img.service-slides {
   max-width: 800px;
-  -webkit-box-shadow: 120px 70px 0 0px #155084;
-          box-shadow: 120px 70px 0 0px #155084;
+  -webkit-box-shadow: 120px 70px 0 0px #0062b0;
+          box-shadow: 120px 70px 0 0px #0062b0;
 }
 
 .top-relative .heading-div h1 {
@@ -909,9 +919,8 @@ nav ul li ul li a {
 }
 
 #services-section {
-  background: -webkit-gradient(linear, left bottom, left top, from(#155084), to(#182129));
-  background: linear-gradient(to top, #155084, #182129);
-  color: #fff;
+  background: #fafafa;
+  color: #000;
 }
 
 .services-mobile-heading {

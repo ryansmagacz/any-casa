@@ -7,7 +7,7 @@ $aqua-dark: #01cccc;
 
 $colorMain: #00ff66;
 $colorSecond: #022f57;
-$colorBlue: rgba(21,80,132,1);
+$colorBlue: #0062b0;
 $colorMainLight: #67ffa4;
 $colorSecondDark: #182129;
 
@@ -474,6 +474,12 @@ hr {
       color: $nav-font-color;
       text-decoration: none;
     }
+
+    & a img {
+        margin: 0 0 5px;
+        max-width: 80px;
+        vertical-align: middle;
+    }
   }
   
   // Container with no padding for navbar
@@ -501,6 +507,9 @@ hr {
           line-height: $nav-height;
           background: $nav-background;
           color: $nav-font-color;
+          text-transform: uppercase;
+          font-weight: 300;
+          font-size: 1rem;
           text-decoration: none;
           @include imantransition($quick-trans);
           
@@ -599,7 +608,7 @@ hr {
       bottom: -10px;
     }
     &.active span {
-      background-color: transparent;
+      background: transparent;
       &:before,
       &:after {
         top: 0;
@@ -616,7 +625,7 @@ hr {
   
   .nav-list li a:hover:after {
     width: 100%;
-    background-color: $colorMain;
+    background: linear-gradient(to right, $colorMainLight, $aqua-lt);
   }
   .nav-list li a:after {
       content: '';
@@ -626,7 +635,7 @@ hr {
       position: absolute;
       bottom: 0;
       left: 0;
-      background-color: transparent;
+      background: transparent;
       transition: all .3s ease-in-out;
       -moz-transition: all .3s ease-in-out;
       -webkit-transition: all .3s ease-in-out;
@@ -958,8 +967,8 @@ hr {
 
 // SERVICES PAGE
 #services-section {
-    background: linear-gradient(to top, $colorBlue,$colorSecondDark);
-    color: #fff;
+    background: #fafafa;
+    color: #000;
 }
 
 .services-mobile-heading {
