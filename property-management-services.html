@@ -123,59 +123,41 @@
 
 
             <div class="section section-padding" id="value-props-services">
-                <div class="overlay"></div>
+                <!-- <div class="overlay"></div> -->
                 <h2 class="h1 text-center">Maximize Your Rental Income</h2>
-                <hr class="hr-small" style="border-color: #ffffff;margin: 2rem auto 3rem;">
-                <div class="grid thirds aj-center grid-gap-2-4 gutters-2 content-width margin-auto" data-aos='fade-up' data-aos-duration="1000" data-aos-delay="200" data-aos-offset="10">
-                        <div class="grid-section value-section-services aj-center text-center">
-                            <div>
-                                <h3>Comprehensive Tenant Selection Process</h3>
-                                <p>Finding the right tenant is almost as important as finding the right property management company. ER Property Solutions employs a comprehensive process for selecting the right tenants.</p>
-                                    <!-- <a href="#" class="button primary-button">YES!</a> -->
-                            </div>
+                <hr class="hr-small" style="margin: 2rem auto 3rem;">
+                <div class="grid content-width margin-auto flex-start" data-aos='fade-up' data-aos-duration="1000" data-aos-delay="200" data-aos-offset="10">
+                        <div class="grid-section video-services aj-center text-center">
+                                <iframe src="https://www.youtube.com/embed/eJVDfc-s9y4" frameborder="0" allowfullscreen></iframe>
                         </div>
 
-                        <div class="grid-section value-section-services aj-center text-center">
-                            <div>
-                                <h3>Make More Money</h3>
-                                <p>Spending less time on property management means more time spent on other ventures and hobbies</p>
-                                <!-- <a href="#" class="button primary-button">YES!</a> -->
-                        
-                            </div>
                         </div>
 
-                        <div class="grid-section value-section-services aj-center text-center">
-                            <div>
-                                <h3>Find the Next Investment</h3>
-                                <p>With all the free time and extra rental income, you'll be looking for the next rental property in no time</p>
-                                <!-- <a href="#" class="button primary-button">YES!</a> -->
-                            </div>
-                        </div>
-                </div>
+
             </div>
 
-            <div class="section content-width margin-auto" id="services-section">
-                <div class="grid grid-gap-2-4 grid-2-1-fr">
-                    <div class="grid grid-gap-2-4 services-list">
-                        <div class="service-content">
-                            <h2 class="text-left-center-mobile">Tenant Selection Process</h2>
+            <div class="section small-section-padding" id="services-section">
+                <div class="grid content-width margin-auto grid-gap-2-4 grid-2-1-fr">
+                    <div class="grid grid-gap-1-3 services-list text-left-center-mobile">
+                        <div>
+                            <h2>Tenant Selection Process</h2>
                             <p>Finding the right tenant is almost as important as finding the right property management company. ER Property Solutions employs a comprehensive process for selecting the right tenants</p>
                         </div>
-                        <div class="service-content">
-                            <h2 class="text-left-center-mobile">Tenant Selection Process</h2>
+                        <div>
+                            <h2>Maintenance &amp; Repairs</h2>
                             <p>Finding the right tenant is almost as important as finding the right property management company. ER Property Solutions employs a comprehensive process for selecting the right tenants</p>
                         </div>
-                        <div class="service-content">
-                            <h2 class="text-left-center-mobile">Tenant Selection Process</h2>
+                        <div>
+                            <h2>Marketing</h2>
                             <p>Finding the right tenant is almost as important as finding the right property management company. ER Property Solutions employs a comprehensive process for selecting the right tenants</p>
                         </div>
                                 
                         
                     </div>
-                    <div class="section services-contact-form">
-                        <div class="grid ">
-                                <h3 class="contact-form-title">Get your free quote today</h3>
-                                <form name="contact" method="POST" id="hero-form" netlify>
+                    <div class="section">
+                        <div class="grid services-contact-form">
+                                <h3 class="contact-form-title text-center">Get your free quote today!</h3>
+                                <form name="services-form" method="POST" id="services-form" netlify>
                                     <!-- <p>What can we help you with?
                                         <select style="border-radius: 4px; border: 1 px solid red; padding: 4px 8px;">
                                             <option value="property_management">Property Management</option>
@@ -184,40 +166,37 @@
                                             <option value="other">Other</option>
                                         </select>
                                     </p> -->
-                                    <div class="grid-section hero-contact-grid">
-                                    <p>
-                                        <input type="text" name="name" id="name" placeholder="Name" value>  
-                                    </p>
+                                    <div class="grid-section popup-contact-form-grid">
+                                        <p>
+                                            <input type="text" name="name" id="name" placeholder="Name" value required>  
+                                        </p>
+            
+                                        <p>
+                                            <!-- <label class="hero-form-label" for="email">Email: </label> -->
+                                            <input type="email" name="email" id="email" placeholder="Email Address" value required>  
+                                        </p>
+            
+                                        <p>
+                                            <!-- <label class="hero-form-label" for="first_name">Phone: </label> -->
+                                            <input type="tel" name="name" id="phone" placeholder="Phone Number (optional)" value>  
+                                        </p>
                 
-                                    <p>
-                                        <!-- <label class="hero-form-label" for="email">Email: </label> -->
-                                        <input type="email" name="email" id="email" placeholder="Email Address" value>  
-                                    </p>
-                
-                                    <p>
-                                        <!-- <label class="hero-form-label" for="first_name">Phone: </label> -->
-                                        <input type="tel" name="name" id="first_name" placeholder="Phone Number" value>  
-                                    </p>
-                
-                                    <p class="pill-select">
-                                        <select style="outline: 0;
-                                        width: calc(100% - 1.3em); border: 0; background: transparent; width: 100% !important; height: 45px;">
-                                            <option value="" disabled selected>Select your property type</option>
-                                            <option>Single Family Home/Townhome/Condominium</option>
-                                            <option>Multi-plex</option>
-                                            <option>Small Apartment Building (under 10 units)</option>
-                                            <option>Large Apartment Building (10+ units)</option>
-                                            <option>Commercial/Business Building</option>
-                                            <option>Vacation Rental (includes Airbnb/VRBO)</option>
-                                            <option>Other/Not Listed</option>
-                                        </select>
-                                        <!-- <label class="hero-form-label" for="message">Message: </label> -->
-                                        <!-- <input type="text" name="message" id="message" placeholder="Message" value>  -->
-                                    </p>
-                                </div>
-                                    
-                                        <button type="submit">REQUEST QUOTE NOW</button>
-                
+                                        <p class="pill-select">
+                                            <select style="outline: 0;border: 1px solid #000; background: transparent; width: 100% !important; height: 45px;margin-bottom: 1rem;">
+                                                <option value="" disabled selected>Select your property type</option>
+                                                <option>Single Family Home/Townhome/Condominium</option>
+                                                <option>Multi-plex</option>
+                                                <option>Small Apartment Building (under 10 units)</option>
+                                                <option>Large Apartment Building (10+ units)</option>
+                                                <option>Commercial/Business Building</option>
+                                                <option>Vacation Rental (includes Airbnb/VRBO)</option>
+                                                <option>Other/Not Listed</option>
+                                            </select>
+                                            <!-- <label class="hero-form-label" for="message">Message: </label> -->
+                                            <!-- <input type="text" name="message" id="message" placeholder="Message" value>  -->
+                                        </p>
+                                    </div>
+                                    <button type="submit" class="section green-blue-primary-button">REQUEST QUOTE NOW</button>
                                 </form>
                         </div>
                     </div>
@@ -255,7 +234,7 @@
                     <div class="grid-section">
                         <div class="schedule-content text-center">
                             <h3 class="h2">Are you ready to maximize your rental income?</h3>
-                            <a href="#" class="button primary-button">YES!</a>
+                            <button class="button primary-button" id="footer-yes">YES!</button>
                         </div>
                     </div>
                 </div>
@@ -287,6 +266,51 @@
 </div>
 
 
+
+<!-- POP UP -->
+<div id="popup">
+        <div style="position: relative; margin: auto;display: grid;height: 100vh;">
+            <div class="popup-box">
+                <div class="close-button-div" id="popup-close"><span>CLOSE</span></div>
+            
+                <div class="popup-box-content">
+                    <div class="popupimg"></div>
+                    <div class="popuptext no-margin" style="">
+                        <h3 class="text-center">Ready to maximize your rental income?</h3>
+                        <p>Enter your information below, and a team member will contact you in 24 hours.</p>
+                        <!-- <p class="text-left-center-mobile lato">Affordable property management in Los Angeles from experienced professionals</p> -->
+                        <form action="" name="quote-popup-form" method="POST" id="quote-popup-form" netlify>
+                            <div class="grid-section popup-contact-form-grid">
+                                <p>
+                                    <input type="text" name="name" id="name" placeholder="Name" value required>  
+                                </p>
+    
+                                <p>
+                                    <!-- <label class="hero-form-label" for="email">Email: </label> -->
+                                    <input type="email" name="email" id="email" placeholder="Email Address" value required>  
+                                </p>
+    
+                                <p>
+                                    <!-- <label class="hero-form-label" for="first_name">Phone: </label> -->
+                                    <input type="tel" name="name" id="phone" placeholder="Phone Number (optional)" value>  
+                                </p>
+    
+                        </div>
+                            
+                        <button type="submit" class="section green-blue-primary-button">REQUEST QUOTE</button>
+    
+                        </form>
+                    </div>
+                </div>
+            </div>
+    
+            
+        </div>
+    </div>
+              
+
+
+
 <!-- SCRIPTS -->
 <!-- jQuery -->
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
@@ -304,6 +328,33 @@
 
     });
 </script>
+
+<script>
+        $(document).ready(function() {
+          if(localStorage.getItem('popState') != 'shown'){
+            $("#popup").delay(3000).fadeIn();
+            localStorage.setItem('popState','shown')
+          }else{
+            console.log('alreadyseentit');
+          }
+      
+          $('#popup-close').click(function(e) // You are clicking the close button
+                                  {
+            $('#popup').fadeOut(); // Now the pop up is hiden.
+          });
+      
+      
+          $('.ih-popup-subscribe').click(function() {
+            $('#popup').fadeOut();
+          });
+
+          $('#footer-yes').click(function() {
+            $('#popup').fadeIn();
+          });
+          
+        });
+</script>
+
 
 </body>
 </html>

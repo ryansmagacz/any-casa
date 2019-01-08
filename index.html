@@ -199,7 +199,7 @@
                     <div class="grid-section">
                         <div class="schedule-content text-center">
                             <h3 class="h2">Are you ready to maximize your rental income?</h3>
-                            <a href="#" class="button primary-button">YES!</a>
+                            <button class="button primary-button" id="footer-yes">YES!</button>
                         </div>
                     </div>
                 </div>
@@ -231,6 +231,52 @@
 </div>
 
 
+<!-- POP UP -->
+<div id="popup">
+    <div style="position: relative; margin: auto;display: grid;height: 100vh;">
+        <div class="popup-box">
+            <div class="close-button-div" id="popup-close"><span>CLOSE</span></div>
+        
+            <div class="popup-box-content">
+                <div class="popupimg"></div>
+                <div class="popuptext no-margin" style="">
+                    <h3 class="text-center">Ready to maximize your rental income?</h3>
+                    <p>Enter your information below, and a team member will contact you in 24 hours.</p>
+                    <!-- <p class="text-left-center-mobile lato">Affordable property management in Los Angeles from experienced professionals</p> -->
+                    <form action="" name="quote-popup-form" method="POST" id="quote-popup-form" netlify>
+                        <div class="grid-section popup-contact-form-grid">
+                            <p>
+                                <input type="text" name="name" id="name" placeholder="Name" value required>  
+                            </p>
+
+                            <p>
+                                <!-- <label class="hero-form-label" for="email">Email: </label> -->
+                                <input type="email" name="email" id="email" placeholder="Email Address" value required>  
+                            </p>
+
+                            <p>
+                                <!-- <label class="hero-form-label" for="first_name">Phone: </label> -->
+                                <input type="tel" name="name" id="phone" placeholder="Phone Number (optional)" value>  
+                            </p>
+
+                    </div>
+                        
+                    <button type="submit" class="section green-blue-primary-button">REQUEST QUOTE</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+</div>
+                    
+
+
+
+
+
 <!-- SCRIPTS -->
 <!-- jQuery -->
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
@@ -248,6 +294,34 @@
 
     });
 </script>
+
+<!-- POP UP SCRIPT -->
+<script>
+        $(document).ready(function() {
+          if(localStorage.getItem('popState') != 'shown'){
+            $("#popup").delay(3000).fadeIn();
+            localStorage.setItem('popState','shown')
+          }else{
+            console.log('alreadyseentit');
+          }
+      
+          $('#popup-close').click(function(e) // You are clicking the close button
+                                  {
+            $('#popup').fadeOut(); // Now the pop up is hiden.
+          });
+      
+      
+          $('.ih-popup-subscribe').click(function() {
+            $('#popup').fadeOut();
+          });
+
+          $('#footer-yes').click(function() {
+            $('#popup').fadeIn();
+          });
+          
+        });
+</script>
+
 
 </body>
 </html>

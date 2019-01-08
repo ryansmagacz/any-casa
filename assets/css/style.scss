@@ -75,9 +75,10 @@ $quick-trans: all 0.2s ease-out;
 %button-base {
     padding: 0.5rem 1.2rem;
     border: 1px solid transparent;
+    border-radius: 4px;
+    background: inherit;
     color: inherit;
     text-decoration: none;
-    background: $colorMain;
 
 }
 
@@ -96,7 +97,7 @@ $quick-trans: all 0.2s ease-out;
 }
 
 %small-section-padding {
-    padding: 1.5rem;
+    padding: 1.5rem 0;
     
     @include media($min: $bp-small) {
         padding: 3rem 0;
@@ -183,6 +184,11 @@ body {
     position: relative !important;
 }
 
+.disabled {
+    background: #888;
+    color: #444;
+}
+
 .absolute {
     position: absolute !important;
 }
@@ -246,6 +252,12 @@ hr {
 }
 
 .h3 {
+    font-family: lato, Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    overflow: hidden;
+    white-space: normal;
+    font-size: 1.6rem;
     font-size: 1rem;
 
     @include media($min: $bp-small) {
@@ -260,7 +272,6 @@ hr {
 .alt-primary-button {
     @extend %button-base, %box-shadow-hover, %trans;
     border: 2px solid $colorMainLight;
-    border-radius: 4px;
     color: $colorMainLight;
     background: transparent;
 
@@ -273,11 +284,11 @@ hr {
 }
 
 .primary-button {
-    @extend %button-base, %box-shadow-hover, %trans;
+    @extend %button-base, %box-shadow-hover;
     background: $colorMainLight;
     border: 2px solid $colorMainLight;
     color: $colorSecondDark;
-    border-radius: 4px;
+    
 
     &:hover {
         background: $white;
@@ -286,10 +297,22 @@ hr {
     }
 }
 
+.green-blue-primary-button {
+    @extend %button-base, %box-shadow-hover;
+    background: $colorMainLight;
+    color: $colorSecondDark;
+    
+
+    &:hover {
+        background: $colorBlue;
+        color: $white;
+    }
+}
 
 .big-button {
     font-size: 1.35rem;
-    padding: 0.7rem 3rem;
+    padding: 1rem 0;
+    width: 100%;
 }
 
 .tablet-up {
@@ -354,6 +377,10 @@ hr {
 .aj-center {
     align-items: center;
     justify-items: center;
+}
+
+.flex-start {
+    align-items: flex-start !important;
 }
 
 .section-padding {
@@ -609,7 +636,25 @@ hr {
   
   // END OF NAVBAR CSS
   
+// contact form css
+.popup-contact-form-grid {
+    & p input {
+        border: 0;
+        width: 100%;
+        margin: 0.25rem 0;
+        color: #000;
+        background: transparent;
+        border-bottom: 1px solid #222;
 
+        @include imantransition(all 0.2s ease-out);
+
+        &:focus {
+            border: 0;
+            background: transparent;
+            border-bottom: 1px solid #000;
+        }
+    }
+}
 
 // HOME PAGE
 
@@ -912,6 +957,11 @@ hr {
 
 
 // SERVICES PAGE
+#services-section {
+    background: linear-gradient(to top, $colorBlue,$colorSecondDark);
+    color: #fff;
+}
+
 .services-mobile-heading {
     z-index: 0;
     padding: 10rem 0;
@@ -933,6 +983,39 @@ hr {
     font-size: 2.5rem !important;
 }
 
+.services-contact-form {
+    padding: 2rem;
+    border: 1px solid #f9f9f9;
+    border-radius: 2%;
+    background: $white;
+    color: $black;
+    @extend %box-shadow;
+    margin: 0 2rem;
+
+    @include media($min:$bp-medium) {
+        margin: 0;
+    }
+
+
+}
+
+.video-services {
+    & iframe {
+        height: 200px;
+        width: 350px;
+        padding: 1rem;
+
+        @include media($min: $bp-small) {
+            height: 400px;
+            width: 700px;
+        }
+
+        @include media($min: $bp-medium) {
+            height: 500px;
+            width: 850px;
+        }
+    }
+}
 
 // CONTACT PAGE
 .contact-page-heading {
@@ -1049,3 +1132,94 @@ hr {
         }
     }
 }
+
+
+// POP UP
+
+/* CUSTOM POP UP  */
+
+#popup {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    // display: grid; 
+    min-width: 100vw; 
+    min-height: 100vh; 
+    width: 100%; 
+    height: 100%; 
+    background: rgba(0,0,0,0.925);
+    z-index: 999;
+    display: none;
+}
+
+#popup-close {
+    position: absolute; 
+    bottom: -20%; 
+  	left: 0;
+    width: 100%; 
+    height: 50px;
+    font-weight: 200;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+.popup-box {
+  width: 300px; 
+  min-height: 400px; 
+  margin: auto; text-align: center; 
+  border: 1px solid #000; 
+  box-shadow: 0 0 15px 5px rgba(0,0,0,.8);
+  border-radius: 10px;
+  position: relative;
+  background: #fff; color: #000;
+
+  & .popup-box-content {
+    width: 100%;position: relative;height: 100%;display: grid; grid-template-columns:1fr;
+  }
+
+  @include media($min: $bp-small) {
+    width: 700px; height: 450px; 
+
+    & .popup-box-content {
+      width: 100%;position: relative;height: 100%;display: grid; grid-template-columns: minmax(120px, 300px) 1fr;
+    }
+
+  }
+
+}
+
+.popuptext {
+  padding: 2rem;
+  margin: auto;
+  align-self: center;
+  
+  @include media($min: $bp-small) {
+    margin: auto;
+  }
+
+  & h3 {
+      font-size: 1.5rem;
+      line-height: 1.6rem;
+      margin-top: 0;
+
+      @include media($min: $bp-small) {
+        font-size: 2rem;
+        line-height: 2.4rem;
+
+      }
+  }
+}
+
+.popupimg {
+  border-radius: 8px 8px 0 0;
+  min-height: 120px;
+  background: url('../img/fancyinterior.jpg');
+  background-size: cover; background-position: center; background-repeat: no-repeat;
+  
+  @include media($min: $bp-small) {
+  	border-radius: 8px 0 0 8px;
+  }
+}
+
