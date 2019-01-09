@@ -844,6 +844,7 @@ hr {
     background: url('../img/palmshollywood375x205.png');
     background-repeat: no-repeat;
     // background-attachment: fixed;
+    background-size: cover;
     background-position: center;
     position: relative;
     z-index: 0;
@@ -851,7 +852,7 @@ hr {
 
     @include media($min:$bp-medium) {
         background: url('../img/palmshollywood.jpg');
-        background-size: cover;
+        // background-size: cover;
         background-attachment: fixed;
     }
 
