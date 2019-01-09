@@ -131,6 +131,28 @@ $quick-trans: all 0.2s ease-out;
     }
 }
 
+
+.grid-gap-small {
+    grid-gap: 10px;
+}
+
+.grid-gap-1-3 {
+    grid-gap: 1rem;
+
+    @include media($min: $bp-small) {
+        grid-gap: 3rem;
+    }
+}
+
+.grid-gap-2-4 {
+    grid-gap: 2rem;
+
+    @include media($min: $bp-small) {
+        grid-gap: 4rem;
+    }
+}
+   
+
 // STANDARDS
 a {
     cursor: pointer !important;
@@ -344,27 +366,6 @@ hr {
 .gutters-2 {
     padding-left: 2rem;
     padding-right: 2rem;
-}
-
-
-.grid-gap-small {
- grid-gap: 10px;
-}
-
-.grid-gap-1-3 {
-    grid-gap: 1rem;
-
-    @include media($min: $bp-small) {
-        grid-gap: 3rem;
-    }
-}
-
-.grid-gap-2-4 {
-    grid-gap: 2rem;
-
-    @include media($min: $bp-small) {
-        grid-gap: 4rem;
-    }
 }
 
 .text-center {
@@ -676,8 +677,34 @@ hr {
 
 // HOME PAGE
 
+.footer-logo {
+    display: grid;
+    margin: 1rem auto;
+    width: 100%;
 
+    & img {
+        max-width: 120px;
+    }
+}
 
+.footer-menu {
+    a {
+        font-size: 0.65rem;
+        text-decoration: none;
+        color: $colorSecondDark;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 300;
+        @extend %trans;
+        cursor: pointer;
+
+        &:hover {
+            color: #0062b0;
+            letter-spacing: 2px;
+
+        }
+    }
+}
 
 .hero-grid {
     background: url('../img/hero-home-1125x650.png');
@@ -712,6 +739,7 @@ hr {
         
         @include media($min: $bp-small) {
             font-size: 6em;
+            text-align: left;
             text-shadow:-3px 3px 0px $colorSecond;
             &:hover {
                 text-shadow:-3px 3px 0px $colorSecond,-6px 6px 0px $colorMainLight;
@@ -833,21 +861,33 @@ hr {
     background: url('../img/fancyinterior.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position: center;
+    
+    @include media($min: $bp-medium) {
+        background: url('../img/fancyinterior.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+    }
+
+
 }
 
 .solutions-tenant {
     background: url('../img/tenants.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position: center;
-
     text-align: left;
     
     @include media($min: $bp-medium) {
+        background: url('../img/tenants.jpg');
         text-align: right;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
     }
 
 
@@ -856,7 +896,6 @@ hr {
 #schedule-home {
     background: url('../img/palms1125x615.png');
     background-repeat: no-repeat;
-    // background-attachment: fixed;
     background-size: cover;
     background-position: center;
     position: relative;
@@ -889,7 +928,7 @@ hr {
 // ABOUT PAGE
 .about-mobile-heading {
     z-index: 0;
-    padding: 10rem 0;
+    padding: 3rem 0;
     background: url('../img/about-slide-2.jpg');
     background-size: cover;
     background-position: center center;
@@ -991,7 +1030,7 @@ hr {
 
 .services-mobile-heading {
     z-index: 0;
-    padding: 10rem 0;
+    padding: 3rem 0;
     background: url('../img/about-slide-3.jpg');
     background-size: cover;
     background-position: center center;
