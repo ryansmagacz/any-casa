@@ -360,6 +360,7 @@ hr {
 }
 
 .content-width {
+  margin: auto;
   max-width: 95%;
 }
 
@@ -601,8 +602,7 @@ nav ul li ul li a {
 
 .nav-list li a:hover:after {
   width: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(#67ffa4), to(#00f3ff));
-  background: linear-gradient(to right, #67ffa4, #00f3ff);
+  background: #0062b0;
 }
 
 .nav-list li a:after {
@@ -639,13 +639,18 @@ nav ul li ul li a {
 }
 
 .hero-grid {
-  background: url("../img/hero-bg-1650x.png");
+  background: url("../img/hero-home-720x.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   height: 100vh;
 }
 
 @media screen and (min-width: 720px) {
   .hero-grid {
     max-height: 75vh;
+    background: url("../img/hero-bg-1650x.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
