@@ -322,13 +322,13 @@ hr {
 
 .green-blue-primary-button {
     @extend %button-base, %box-shadow-hover;
-    background: $colorMainLight;
-    color: $colorSecondDark;
+    background: $colorMainLight !important;
+    color: $colorSecondDark !important;
     
 
     &:hover {
-        background: $colorBlue;
-        color: $white;
+        background: $colorBlue !important;
+        color: $white !important;
     }
 }
 

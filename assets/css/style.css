@@ -274,13 +274,13 @@ hr {
 }
 
 .green-blue-primary-button {
-  background: #67ffa4;
-  color: #182129;
+  background: #67ffa4 !important;
+  color: #182129 !important;
 }
 
 .green-blue-primary-button:hover {
-  background: #0062b0;
-  color: #ffffff;
+  background: #0062b0 !important;
+  color: #ffffff !important;
 }
 
 .big-button {
