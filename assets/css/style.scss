@@ -841,7 +841,7 @@ hr {
 }
 
 #schedule-home {
-    background: url('../img/palmshollywood375x205.png');
+    background: url('../img/palms1125x615.png');
     background-repeat: no-repeat;
     // background-attachment: fixed;
     background-size: cover;
@@ -852,8 +852,10 @@ hr {
 
     @include media($min:$bp-medium) {
         background: url('../img/palmshollywood.jpg');
-        // background-size: cover;
         background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 
     & .overlay {

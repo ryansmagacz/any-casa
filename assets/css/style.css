@@ -808,7 +808,7 @@ nav ul li ul li a {
 }
 
 #schedule-home {
-  background: url("../img/palmshollywood375x205.png");
+  background: url("../img/palms1125x615.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -820,6 +820,9 @@ nav ul li ul li a {
   #schedule-home {
     background: url("../img/palmshollywood.jpg");
     background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
