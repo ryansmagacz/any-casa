@@ -138,8 +138,17 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Raleway', 'Lato', Arial, Helvetica, sans-serif !important;
 }
 
+.nobel {
+  font-family: 'nobel', 'Raleway', 'Lato', Arial, Helvetica, sans-serif !important;
+  font-weight: 200;
+}
+
 .font-300 {
   font-weight: 300 !important;
+}
+
+.font-400 {
+  font-weight: 400 !important;
 }
 
 .font-500 {
@@ -148,6 +157,22 @@ h1, h2, h3, h4, h5, h6 {
 
 .font-700 {
   font-weight: 700 !important;
+}
+
+.font-blue {
+  color: #0062b0 !important;
+}
+
+.font-green {
+  color: #67ffa4 !important;
+}
+
+.font-black {
+  color: #000000 !important;
+}
+
+.font-white {
+  color: #ffffff !important;
 }
 
 .h1 {
@@ -418,6 +443,42 @@ hr {
   width: 100%;
 }
 
+.icon-image {
+  max-width: 80px;
+  max-height: 80px;
+}
+
+.quarters-2 {
+  -ms-grid-columns: 1fr 1fr !important;
+      grid-template-columns: 1fr 1fr !important;
+}
+
+@media screen and (min-width: 720px) {
+  .quarters-2 {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr !important;
+        grid-template-columns: 1fr 1fr 1fr 1fr !important;
+  }
+}
+
+.quarters-1 {
+  -ms-grid-columns: 1fr !important;
+      grid-template-columns: 1fr !important;
+}
+
+@media screen and (min-width: 720px) {
+  .quarters-1 {
+    -ms-grid-columns: 1fr 1fr !important;
+        grid-template-columns: 1fr 1fr !important;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .quarters-1 {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr !important;
+        grid-template-columns: 1fr 1fr 1fr 1fr !important;
+  }
+}
+
 .thirds {
   -ms-grid-columns: 1fr !important;
       grid-template-columns: 1fr !important;
@@ -430,13 +491,13 @@ hr {
   }
 }
 
-.two-col-grid-small {
+.two-col-grid-small, .two-column {
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
 }
 
 @media screen and (min-width: 720px) {
-  .two-col-grid-small {
+  .two-col-grid-small, .two-column {
     -ms-grid-columns: 1fr 1fr !important;
         grid-template-columns: 1fr 1fr !important;
   }
@@ -509,6 +570,7 @@ hr {
 }
 
 nav {
+  z-index: 8;
   float: right;
 }
 
@@ -555,7 +617,7 @@ nav ul li ul li a {
 .nav-dropdown {
   position: absolute;
   display: none;
-  z-index: 1;
+  z-index: 8;
   -webkit-box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
           box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
 }
@@ -1124,7 +1186,7 @@ nav ul li ul li a {
 
 @media screen and (min-width: 720px) {
   .contact-page-heading .heading-div, .services-mobile-heading .heading-div {
-    z-index: 4;
+    z-index: 1;
     max-width: 650px;
     padding: 0.5rem 1.5rem;
     color: #000;

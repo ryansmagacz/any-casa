@@ -182,8 +182,17 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Raleway', 'Lato', Arial, Helvetica, sans-serif !important;
 }
 
+.nobel {
+    font-family: 'nobel', 'Raleway', 'Lato', Arial, Helvetica, sans-serif !important;;
+    font-weight: 200;
+}
+
 .font-300 {
     font-weight: 300 !important;
+}
+
+.font-400 {
+    font-weight: 400 !important;
 }
 
 .font-500 {
@@ -192,6 +201,22 @@ h1, h2, h3, h4, h5, h6 {
 
 .font-700 {
     font-weight: 700 !important;
+}
+
+.font-blue {
+    color: $colorBlue !important;
+}
+
+.font-green {
+    color: $colorMainLight !important;
+}
+
+.font-black {
+    color: $black !important;
+}
+
+.font-white {
+    color: $white !important;
 }
 
 .h1 {
@@ -476,6 +501,32 @@ hr {
     }
 }
 
+.icon-image {
+        max-width: 80px;
+        max-height: 80px;
+
+}
+
+.quarters-2 {
+    grid-template-columns: 1fr 1fr !important;
+    
+    @include media($min: $bp-small) {
+        grid-template-columns: 1fr 1fr 1fr 1fr !important;
+    }
+}
+
+.quarters-1 {
+    grid-template-columns: 1fr !important;
+    
+    @include media($min: $bp-small) {
+        grid-template-columns: 1fr 1fr !important;
+    }
+
+    @include media($min: $bp-large) {
+        grid-template-columns: 1fr 1fr 1fr 1fr !important;
+    }
+}
+
 .thirds {
     grid-template-columns: 1fr !important;
     
@@ -485,13 +536,15 @@ hr {
 }
 
 
-.two-col-grid-small {
+
+.two-col-grid-small, .two-column {
     grid-template-columns: 1fr;
 
     @include media($min: $bp-small) {
         grid-template-columns: 1fr 1fr !important;
     }
 }
+
 
 .two-col-grid-smaller {
     grid-template-columns: 1fr;
@@ -560,6 +613,7 @@ hr {
   
   // Navigation 
   nav {
+      z-index: 8;
     float: right;
     
     ul {
@@ -603,7 +657,7 @@ hr {
   .nav-dropdown {
     position: absolute;
     display: none;
-    z-index: 1;
+    z-index: 8;
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
   }
   
@@ -738,6 +792,7 @@ hr {
 
     }
 }
+
 
 // HOME PAGE
 
@@ -1066,6 +1121,7 @@ hr {
 
         & h1 {
             margin: 0;
+            
             font-size: 3.5rem;
             // font-family: Lato, Raleway, Helvetica, Arial ;
             text-transform: uppercase;
@@ -1173,7 +1229,7 @@ hr {
         }
 
         @include media($min: $bp-small) {
-            z-index: 4;
+            z-index: 1;
             max-width: 650px;
             padding: 0.5rem 1.5rem;
             // background: linear-gradient(20deg, $white, $white);
