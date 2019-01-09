@@ -681,10 +681,8 @@ hr {
 
 .hero-grid {
     background: url('../img/hero-home-720x.png');
-    background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
-        background-attachment: fixed;
     height: 100vh;
 
     @include media($min: $bp-small) {
