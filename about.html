@@ -71,7 +71,8 @@
                             <a href="about.html">About</a>
                         </li>
                         <li>
-                            <a href="contact.html">Contact</a>
+                            <button class="green-blue-primary-button" id="header-yes">Request a Quote</button>
+                            <!-- <a href="contact.html" class="text-center green-blue-primary-button tablet-down" id="header-yes">Request a Quote</a> -->
                         </li>
                     </ul>
                     </nav>
@@ -104,7 +105,7 @@
                         </div>
 
                         <div class="heading-div" data-aos='fade-left' data-aos-duration="1500" data-aos-delay="200" data-aos-offset="10">
-                            <h1 class="text-center page-heading">Who we are</h1>
+                            <h1 class="h1 text-center page-heading">Who we are</h1>
                         </div>
                     
                     </div>
@@ -115,7 +116,7 @@
                     <div class="overlay"></div>
                     <div class="grid margin-auto aj-center">
                         <div class="heading-div" style="width:100%;">
-                            <h1 class="text-center page-heading lato" style="text-shadow: 2px 2px rgba(255,255,255,1);">Who We Are</h1>
+                            <h1 class="h2text-center page-heading lato" style="text-shadow: 2px 2px rgba(255,255,255,1);">Who We Are</h1>
                         </div>
                     </div>
                 </div>
@@ -157,7 +158,7 @@
             </div>
 
 
-            <!-- END OF CONTENT WRAPPER -->
+           <!-- END OF CONTENT WRAPPER -->
         </div>
 
         <div class="section" id="footer-wrapper">
@@ -165,11 +166,13 @@
                 <div class="grid-section aj-center text-center">
                         
                         <div class="footer-section">
-                            <p>
-                                    <img src="assets/img/icons/homehand.svg" style="height: 5rem;margin: auto;">
-                                
-                                <a href=""><h2>ER Property Solutions</h2></a><br>
-                                <a href="">Home</a> | <a href="">About</a> | <a href="">Owners</a> | <a href="">Tenants</a> | <a href="">Contact</a>
+                            <p> 
+                                <div class="footer-logo">
+                                    <a href="index.html"><img src="assets/img/ER-Property-Solutions---Logo-blue.png" alt="ER Property Solutions Los Angeles Logo"></a>
+                                </div>
+                                <div class="footer-menu">
+                                    <a href="index.html">Home</a>  |  <a href="property-management-services.html">Services</a>  |  <a href="#">Owners</a>  |  <a href="#">Tenants</a>  |  <a href="about.html">About</a>  |  <a href="contact.html">Contact</a>
+                                </div>
                             </p>
                         </div>
 
@@ -182,49 +185,64 @@
 </div>
 
 
-
-
 <!-- POP UP -->
 <div id="popup">
-        <div style="position: relative; margin: auto;display: grid;height: 100vh;">
-            <div class="popup-box">
-                <div class="close-button-div" id="popup-close"><span>CLOSE</span></div>
-            
-                <div class="popup-box-content">
-                    <div class="popupimg"></div>
-                    <div class="popuptext no-margin" style="">
-                        <h3 class="text-center">You're one step closer to a better life</h3>
-                        <p>Enter your information below, and a team member will contact you in 24 hours about our property management rates.</p>
-                        <!-- <p class="text-left-center-mobile lato">Affordable property management in Los Angeles from experienced professionals</p> -->
-                        <form action="" name="quote-popup-form" method="POST" id="quote-popup-form" netlify>
-                            <div class="grid-section popup-contact-form-grid">
-                                <p>
-                                    <input type="text" name="name" id="name" placeholder="Name" value required>  
-                                </p>
-    
-                                <p>
-                                    <!-- <label class="hero-form-label" for="email">Email: </label> -->
-                                    <input type="email" name="email" id="email" placeholder="Email Address" value required>  
-                                </p>
-    
-                                <p>
-                                    <!-- <label class="hero-form-label" for="first_name">Phone: </label> -->
-                                    <input type="tel" name="name" id="phone" placeholder="Phone Number (optional)" value>  
-                                </p>
-    
-                        </div>
-                            
-                        <button type="submit" class="section green-blue-primary-button">REQUEST QUOTE</button>
-    
-                        </form>
+    <div class="popup-inner">
+        <div class="popup-box">
+            <div class="close-button-div" id="popup-close"><span>CLOSE</span></div>
+        
+            <div class="popup-box-content">
+                <div class="popupimg"></div>
+                <div class="popuptext no-margin">
+                    <h3 class="text-center">Ready to maximize your rental income?</h3>
+                    <p class="tablet-up">Enter your information below, and a team member will contact you in 24 hours.</p>
+                    <!-- <p class="text-left-center-mobile lato">Affordable property management in Los Angeles from experienced professionals</p> -->
+                    <form action="" name="quote-popup-form" method="POST" id="quote-popup-form" netlify>
+                        <div class="grid-section popup-contact-form-grid">
+                            <p>
+                                <input type="text" name="name" id="name" placeholder="Name" value required>  
+                            </p>
+
+                            <p>
+                                <!-- <label class="hero-form-label" for="email">Email: </label> -->
+                                <input type="email" name="email" id="email" placeholder="Email Address" value required>  
+                            </p>
+
+                            <p>
+                                <!-- <label class="hero-form-label" for="first_name">Phone: </label> -->
+                                <input type="tel" name="name" id="phone" placeholder="Phone Number (optional)" value>  
+                            </p>
+
+                            <p class="pill-select">
+                                <select style="outline: 0;border: 1px solid #000; background: transparent; width: 100% !important; height: 45px;margin-bottom: 1rem;">
+                                    <option value="" disabled selected>Select your property type</option>
+                                    <option>Single Family Home/Townhome/Condominium</option>
+                                    <option>Multi-plex</option>
+                                    <option>Small Apartment Building (under 10 units)</option>
+                                    <option>Large Apartment Building (10+ units)</option>
+                                    <option>Commercial/Business Building</option>
+                                    <option>Vacation Rental (includes Airbnb/VRBO)</option>
+                                    <option>Other/Not Listed</option>
+                                </select>
+                                <!-- <label class="hero-form-label" for="message">Message: </label> -->
+                                <!-- <input type="text" name="message" id="message" placeholder="Message" value>  -->
+                            </p>
                     </div>
+                        
+                    <button type="submit" class="section green-blue-primary-button">REQUEST QUOTE</button>
+
+                    </form>
                 </div>
             </div>
-    
-            
         </div>
+
+        
     </div>
-              
+</div>
+                    
+
+
+
 
 
 <!-- SCRIPTS -->
@@ -245,10 +263,16 @@
     });
 </script>
 
-
+<!-- POP UP SCRIPT -->
 <script>
         $(document).ready(function() {
-
+          if(localStorage.getItem('popState') != 'shown'){
+            $("#popup").delay(3000).fadeIn();
+            localStorage.setItem('popState','shown')
+          }else{
+            console.log('alreadyseentit');
+          }
+      
           $('#popup-close').click(function(e) // You are clicking the close button
                                   {
             $('#popup').fadeOut(); // Now the pop up is hiden.
@@ -262,9 +286,14 @@
           $('#footer-yes').click(function() {
             $('#popup').fadeIn();
           });
+
+          $('#header-yes').click(function() {
+            $('#popup').fadeIn();
+          });
           
         });
 </script>
+
 
 </body>
 </html>

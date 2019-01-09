@@ -419,7 +419,7 @@ hr {
 .header-wrapper {
   -webkit-box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
-  z-index: 10;
+  z-index: 2;
 }
 
 #header-yes {
@@ -434,10 +434,6 @@ hr {
     padding: 0.5rem 1rem;
     margin: 15px 0.75rem 0;
   }
-}
-
-.navigation {
-  background: #fff;
 }
 
 .brand {
@@ -537,7 +533,7 @@ nav ul li ul li a {
   }
   nav {
     width: 100%;
-    z-index: 99999999;
+    z-index: 9;
     position: relative;
     padding: 70px 0 0px;
   }
@@ -1025,6 +1021,11 @@ nav ul li ul li a {
   }
 }
 
+.services-list div img {
+  max-width: 80px;
+  max-height: 100px;
+}
+
 .video-services iframe {
   height: 200px;
   width: 350px;
@@ -1246,7 +1247,7 @@ nav ul li ul li a {
 
 .popup-box {
   width: 300px;
-  max-height: 500px;
+  max-height: 530px;
   margin: auto;
   text-align: center;
   border: 1px solid #000;

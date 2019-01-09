@@ -462,7 +462,7 @@ hr {
 
 .header-wrapper {
     box-shadow: $bxs-medium;
-    z-index: 10;
+    z-index: 2;
 }
 
 #header-yes {
@@ -478,10 +478,7 @@ hr {
 }
 
 // Outer navigation wrapper
-.navigation {
-    // height: $nav-height;
-    background: $nav-background;
-  }
+
   
   // Logo and branding
   .brand {
@@ -579,7 +576,7 @@ hr {
     }
     nav {
      width: 100%;
-         z-index: 99999999;
+         z-index: 9;
       position: relative;
       padding: $nav-height 0 0px;
       ul {
@@ -1075,8 +1072,15 @@ hr {
     @include media($min:$bp-medium) {
         margin: 0;
     }
+}
 
-
+.services-list {
+    & div {
+        & img {
+            max-width: 80px;
+            max-height: 100px;
+        }
+    }
 }
 
 .video-services {
@@ -1252,7 +1256,7 @@ hr {
 
 .popup-box {
   width: 300px; 
-  max-height: 500px; 
+  max-height: 530px; 
   margin: auto; text-align: center; 
   border: 1px solid #000; 
   box-shadow: 0 0 15px 5px rgba(0,0,0,.8);
