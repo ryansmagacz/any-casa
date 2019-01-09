@@ -1232,7 +1232,7 @@ nav ul li ul li a {
 
 .popup-box {
   width: 300px;
-  min-height: 400px;
+  height: 340px;
   margin: auto;
   text-align: center;
   border: 1px solid #000;
