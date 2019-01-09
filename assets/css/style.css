@@ -649,14 +649,13 @@ nav ul li ul li a {
   height: 100vh;
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 860px) {
   .hero-grid {
     max-height: 75vh;
     background: url("../img/hero-bg-1650x.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
   }
 }
 

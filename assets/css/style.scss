@@ -689,13 +689,13 @@ hr {
     min-height: 400px;
     height: 100vh;
 
-    @include media($min: $bp-small) {
+    @include media($min: $bp-medium) {
         max-height: 75vh;
         background: url('../img/hero-bg-1650x.png');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        background-attachment: fixed;
+        // background-attachment: fixed;
     }
 }
 
