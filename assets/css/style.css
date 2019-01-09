@@ -619,6 +619,7 @@ nav ul li ul li a {
   color: #000;
   background: transparent;
   border-bottom: 1px solid #222;
+  border-radius: 0 !important;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
@@ -631,7 +632,6 @@ nav ul li ul li a {
 
 .hero-grid {
   background: url("../img/hero-bg-1650x.png");
-  background-size: auto;
   height: 100vh;
 }
 
@@ -808,9 +808,8 @@ nav ul li ul li a {
 }
 
 #schedule-home {
-  background: url("../img/palmshollywood.jpg");
+  background: url("../img/palmshollywood375x205.png");
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-position: center;
   position: relative;
   z-index: 0;
@@ -818,7 +817,9 @@ nav ul li ul li a {
 
 @media screen and (min-width: 720px) {
   #schedule-home {
+    background: url("../img/palmshollywood.jpg");
     background-size: cover;
+    background-attachment: fixed;
   }
 }
 
@@ -1140,6 +1141,14 @@ nav ul li ul li a {
 }
 
 /* CUSTOM POP UP  */
+.popup-inner {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  height: 100vh;
+  width: 100xw;
+}
+
 #popup {
   position: fixed;
   top: 0;
