@@ -1,0 +1,73 @@
+#home-page-main-grid {
+  -ms-grid-rows: auto 100px;
+      grid-template-rows: auto 100px;
+  position: relative;
+  z-index: 5;
+}
+
+#home-page-main-grid .header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+#home-page-main-grid .header header .nav-container {
+  margin-top: 0.5rem;
+}
+
+#home-page-main-grid .header header .nav-container .brand {
+  z-index: 6;
+}
+
+#home-page-main-grid .header header .nav-container nav {
+  padding: 80px 0 0px;
+  z-index: 10;
+}
+
+@media screen and (min-width: 720px) {
+  #home-page-main-grid .header header .nav-container nav {
+    padding: 0;
+    background: transparent;
+  }
+}
+
+#home-page-main-grid .header header .nav-container nav .nav-mobile {
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0px 8px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0px 8px rgba(0, 0, 0, 0.3);
+  margin-right: 1rem;
+}
+
+#home-page-main-grid .header header .nav-container nav .nav-mobile:hover {
+  -webkit-box-shadow: 0 2px 16px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 2px 16px rgba(0, 0, 0, 0.5);
+}
+
+#home-page-main-grid .header header .nav-container nav ul.nav-list li {
+  z-index: 11;
+}
+
+#home-page-main-grid .header header .nav-container nav ul.nav-list li a {
+  z-index: 11;
+  background: #ffffff;
+}
+
+#home-page-main-grid .header header .nav-container nav ul.nav-list li a:hover {
+  background: #67ffa4;
+}
+
+@media screen and (min-width: 720px) {
+  #home-page-main-grid .header header .nav-container nav ul.nav-list li a {
+    background: transparent;
+  }
+  #home-page-main-grid .header header .nav-container nav ul.nav-list li a:hover {
+    background: transparent;
+  }
+}
+
+#home-page-main-grid .header header .nav-container nav ul.nav-list li ul li a {
+  background: #ffffff;
+}
+/*# sourceMappingURL=homepage.css.map */
