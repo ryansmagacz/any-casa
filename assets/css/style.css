@@ -640,7 +640,7 @@ nav ul li ul li a {
 
 .hero-grid {
   background: url("../img/hero-home-720x.png");
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
