@@ -426,11 +426,13 @@ hr {
   width: 100%;
   border-radius: 0;
   margin: 0;
+  padding: 1rem 0;
 }
 
 @media screen and (min-width: 860px) {
   #header-yes {
-    margin: 0.75rem 0.75rem 0.75rem 0;
+    padding: 0.5rem 1rem;
+    margin: 15px 0.75rem 0;
   }
 }
 
