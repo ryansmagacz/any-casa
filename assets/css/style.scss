@@ -17,7 +17,11 @@ $bxs-medium: 2px 4px 10px rgba(0,0,0,0.2);
 $bxs-dark: 0 0 11px rgba(0,0,0,0.55);
 
 // Navigation Variables
-$content-width: 66rem;
+$content-width-90: 90%;
+$content-width-95: 95%;
+$content-width-medium: 48rem;
+$content-width-large: 56rem;
+$content-width-xl: 66rem;
 $breakpoint: 860px;
 $nav-height: 70px;
 $nav-background: #fff;
@@ -346,6 +350,10 @@ hr {
 }
 
 
+.grid-gap-small {
+ grid-gap: 10px;
+}
+
 .grid-gap-1-3 {
     grid-gap: 1rem;
 
@@ -400,8 +408,11 @@ hr {
 }
 
 .content-width {
-    @include media($min: $bp-small) {
-        max-width: $content-width;
+
+    max-width: $content-width-95;
+
+    @include media($min: $bp-xl) {
+        max-width: $content-width-xl;
     }
 }
 
@@ -484,7 +495,7 @@ hr {
   
   // Container with no padding for navbar
   .nav-container {
-    max-width: $content-width;
+    max-width: $content-width-xl;
     margin: 0 auto;
     
   }
@@ -726,7 +737,6 @@ hr {
 
 .intro-grid {
     @extend %grid-base;
-    max-width: $content-width;
     margin: auto;
 }
 
@@ -1017,11 +1027,11 @@ hr {
     & iframe {
         height: 200px;
         width: 350px;
-        padding: 1rem;
+        
 
         @include media($min: $bp-small) {
-            height: 400px;
-            width: 700px;
+            height: 350px;
+            width: 600px;
         }
 
         @include media($min: $bp-medium) {
