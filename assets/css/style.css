@@ -975,7 +975,7 @@ nav ul li ul li a {
   .top-relative .heading-div {
     position: absolute;
     top: 13%;
-    left: 53%;
+    left: 60%;
     z-index: 4;
     max-width: 650px;
     padding: 0.5rem 1.5rem;
@@ -1003,7 +1003,7 @@ nav ul li ul li a {
 }
 
 .services-heading {
-  font-size: 2.5rem !important;
+  font-size: 2rem !important;
 }
 
 .services-contact-form {
@@ -1045,7 +1045,7 @@ nav ul li ul li a {
   }
 }
 
-.contact-page-heading .heading-div h1 {
+.contact-page-heading .heading-div h1, .services-mobile-heading .heading-div h1 {
   margin: 0;
   font-size: 3.5rem;
   text-transform: uppercase;
@@ -1054,11 +1054,10 @@ nav ul li ul li a {
 }
 
 @media screen and (min-width: 720px) {
-  .contact-page-heading .heading-div {
+  .contact-page-heading .heading-div, .services-mobile-heading .heading-div {
     z-index: 4;
     max-width: 650px;
     padding: 0.5rem 1.5rem;
-    background: linear-gradient(20deg, #ffffff, #ffffff);
     color: #000;
   }
 }
@@ -1247,7 +1246,7 @@ nav ul li ul li a {
 
 .popup-box {
   width: 300px;
-  max-height: 530px;
+  height: 500px;
   margin: auto;
   text-align: center;
   border: 1px solid #000;
@@ -1272,7 +1271,7 @@ nav ul li ul li a {
 @media screen and (min-width: 720px) {
   .popup-box {
     width: 700px;
-    height: 450px;
+    height: 550px;
   }
   .popup-box .popup-box-content {
     width: 100%;

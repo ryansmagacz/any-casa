@@ -1019,7 +1019,7 @@ hr {
         @include media($min: $bp-small) {
             position: absolute;
             top: 13%;
-            left: 53%;
+            left:60%;
             z-index: 4;
             max-width: 650px;
             padding: 0.5rem 1.5rem;
@@ -1057,7 +1057,7 @@ hr {
 
 
 .services-heading {
-    font-size: 2.5rem !important;
+    font-size: 2rem !important;
 }
 
 .services-contact-form {
@@ -1102,7 +1102,7 @@ hr {
 }
 
 // CONTACT PAGE
-.contact-page-heading {
+.contact-page-heading, .services-mobile-heading {
     
     & .heading-div {
 
@@ -1119,7 +1119,7 @@ hr {
             z-index: 4;
             max-width: 650px;
             padding: 0.5rem 1.5rem;
-            background: linear-gradient(20deg, $white, $white);
+            // background: linear-gradient(20deg, $white, $white);
             color: #000;
             
         }
@@ -1256,7 +1256,7 @@ hr {
 
 .popup-box {
   width: 300px; 
-  max-height: 530px; 
+  height: 500px; 
   margin: auto; text-align: center; 
   border: 1px solid #000; 
   box-shadow: 0 0 15px 5px rgba(0,0,0,.8);
@@ -1269,7 +1269,7 @@ hr {
   }
 
   @include media($min: $bp-small) {
-    width: 700px; height: 450px; 
+    width: 700px; height: 550px; 
 
     & .popup-box-content {
       width: 100%;position: relative;height: 100%;display: grid; grid-template-columns: minmax(120px, 300px) 1fr;
