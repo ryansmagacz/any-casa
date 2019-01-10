@@ -38,11 +38,6 @@
   margin-right: 1rem;
 }
 
-#home-page-main-grid .header header .nav-container nav .nav-mobile:hover {
-  -webkit-box-shadow: 0 2px 16px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 2px 16px rgba(0, 0, 0, 0.5);
-}
-
 #home-page-main-grid .header header .nav-container nav ul.nav-list li {
   z-index: 11;
 }

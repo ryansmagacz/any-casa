@@ -18,6 +18,7 @@ $bxs-dark: 0 0 11px rgba(0,0,0,0.55);
 
 // Navigation Variables
 $content-width-80: 80%;
+$content-width-90: 90%;
 $content-width-95: 95%;
 $content-width-xl: 66rem;
 $breakpoint: 860px;
@@ -492,7 +493,7 @@ hr {
 
 .content-width {
     margin: auto;
-    max-width: $content-width-95;
+    max-width: $content-width-90;
 
     @include media($min: $bp-xl) {
         max-width: $content-width-xl;
@@ -594,6 +595,7 @@ hr {
     padding: 1rem 0;
     
     @include media($min:$bp-small) {
+        border-radius: 4px;
         padding: 0.8rem 1rem;
         margin: 0.5rem 0 0;
     }
@@ -794,6 +796,7 @@ hr {
 .popup-contact-form-grid {
     & p {
         padding: 0 1rem;
+        margin: 0.25rem 0;
 
         & input {
             font-size: 1rem !important;
@@ -815,6 +818,7 @@ hr {
         &.pill-select {
             color: $black !important;
             font-size: 1rem !important;
+            margin: 0.2rem 0 0;
         }
 
     }
@@ -855,14 +859,14 @@ hr {
 }
 
 .hero-grid {
+    min-height: 100vh;
+    position: relative;
     background: url('../img/hero-home-1125x650.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    position: relative;
     z-index: 0;
-    min-height: 400px;
-    min-height: 100vh;
+    
 
     & .overlay {
         @extend %overlay;
@@ -871,12 +875,13 @@ hr {
     }
 
     @include media($min: $bp-medium) {
-        // max-height: 75vh;
         background: url('../img/hero-bg-1650x.png');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         background-attachment: fixed;
+        min-height: 70vh;
+
     }
 }
 
@@ -898,7 +903,7 @@ hr {
         margin: 0.35rem 0;
 
         & input {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             border: 0;
             width: 100%;
             border: 1px solid $white;
@@ -907,6 +912,7 @@ hr {
             border-radius: 4px !important;
             color: #fff;
             background: rgba(255,255,255,0.2);
+            box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
 
             &::placeholder {
                 color: $white;
@@ -918,13 +924,7 @@ hr {
     }
 }
 
-.grid-section {
-    & p.pill-select {
-        padding: 0.5rem !important;
-        color: $white;
-        font-size: 1.2rem;
-    }
-}
+
 
 .hero-content {
     color: #ffffff;
@@ -1249,21 +1249,7 @@ hr {
 
 
 .services-heading {
-    font-size: 2rem !important;
-}
-
-.services-contact-form {
-    padding: 2rem;
-    border: 1px solid #f9f9f9;
-    border-radius: 2%;
-    background: $white;
-    color: $black;
-    @extend %box-shadow;
-    margin: 0 2rem;
-
-    @include media($min:$bp-medium) {
-        margin: 0;
-    }
+    font-size: 1.82rem !important;
 }
 
 .services-list, .value-section {
@@ -1320,31 +1306,6 @@ hr {
 }
 
 
-// OWNER PAGE 
-.owner-page-section-hero {
-    background: url('../img/owner-page-hero-1.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 50vh;
-    // background-position-x: -318px;
-    background-size: cover;
-    display: flex;
-
-    @include media($min: $bp-small) {
-        max-height: 30vh;
-        background-position-x: 0;
-    }
-
-    & h1 {
-        color: white;
-        @extend %text-shadow-2;
-        font-size: 4rem;
-    }
-}
-
-
-
-
 // UNDERLINE MAGIC
 
 .underline--magical {
@@ -1369,8 +1330,6 @@ hr {
 
 .heading-img-slider{
 
-
-    
     @keyframes fade3
     {
       0%   {opacity:1}
@@ -1502,3 +1461,51 @@ hr {
   }
 }
 
+
+
+
+// CONTACT FORM
+#contact-form-section {
+    background: #fff;
+    box-shadow: 0 0 12px rgba(0,0,0,0.15);   
+
+    & #contact-form {
+        padding: 1rem;
+    }
+}
+
+
+.contact-form-grid {
+    & p {
+        padding: 0 1rem;
+        margin: 0.35rem 0;
+        
+        & input {
+            font-size: 1.1rem;
+            width: 100%;
+            font-size: 1.1rem;
+            border: 1px solid #f4f4f4;
+            padding: 0.5rem;
+            margin-left: -0.5rem;
+            border-radius: 4px !important;
+            color: #000000;
+            background: rgba(255,255,255,1);
+       
+
+            &::placeholder {
+                color: #000000;
+                text-align: left;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+.grid-section {
+    & p.pill-select {
+        padding: 0 0.45rem !important;
+        color: $black;
+        font-size: 1.1rem;
+    }
+}
