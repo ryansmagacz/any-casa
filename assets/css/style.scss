@@ -801,7 +801,8 @@ hr {
             color: #000;
             background: transparent;
             border: 1px solid #000;
-            padding: 0.5rem 0rem;
+            padding: 0.5rem;
+            margin-left: -0.5rem;
             border-radius: 4px !important;
             &::placeholder {
                 color: $black;
@@ -892,15 +893,16 @@ hr {
         & input {
             border: 0;
             width: 100%;
+            border: 1px solid $white;
+            padding: 0.5rem;
+            margin-left: -0.5rem;
+            border-radius: 4px !important;
             color: #000;
             background: rgba(255,255,255,0.2);
-            border: 1px solid $white;
-            padding: 0.5rem 0rem;
-            border-radius: 4px !important;
+
             &::placeholder {
                 color: $black;
                 text-align: left;
-                padding-left: 10px;
                 letter-spacing: 1px;
                 text-transform: uppercase;
             }
@@ -908,6 +910,11 @@ hr {
     }
 }
 
+.grid-section {
+    & p.pill-select {
+        padding: 0.5rem !important;
+    }
+}
 
 .hero-content {
     color: #ffffff;
