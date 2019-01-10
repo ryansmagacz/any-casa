@@ -20,7 +20,7 @@
           box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
-#value-props-home h2, .owner-page-section-hero h1 {
+.text-shadow, .hero-heading, #value-props-home h2, .owner-page-section-hero h1 {
   text-shadow: 2px 2px rgba(0, 0, 0, 0.75);
 }
 
@@ -60,7 +60,7 @@
   }
 }
 
-.about-mobile-heading .overlay, .services-mobile-heading .overlay {
+.hero-grid .overlay, .about-mobile-heading .overlay, .services-mobile-heading .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -186,21 +186,31 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .h2 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 @media screen and (min-width: 720px) {
   .h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 }
 
 .h3 {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 @media screen and (min-width: 720px) {
   .h3 {
+    font-size: 2rem;
+  }
+}
+
+.h4 {
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 720px) {
+  .h4 {
     font-size: 1.75rem;
   }
 }
@@ -234,6 +244,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .absolute {
   position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .margin-auto {
@@ -818,14 +832,74 @@ nav ul li ul li a {
   height: 100vh;
 }
 
+.hero-grid .overlay {
+  background: rgba(0, 0, 0, 0.1);
+}
+
 @media screen and (min-width: 860px) {
   .hero-grid {
-    max-height: 75vh;
     background: url("../img/hero-bg-1650x.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
   }
+}
+
+.hero-heading {
+  font-size: 2.5rem;
+}
+
+@media screen and (min-width: 720px) {
+  .hero-heading {
+    font-size: 3.75rem;
+  }
+}
+
+.hero-contact-form-grid p {
+  padding: 0 1rem;
+}
+
+.hero-contact-form-grid p input {
+  border: 0;
+  width: 100%;
+  color: #000;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid #ffffff;
+  padding: 0.5rem 0rem;
+  border-radius: 4px !important;
+}
+
+.hero-contact-form-grid p input::-webkit-input-placeholder {
+  color: #000000;
+  text-align: left;
+  padding-left: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.hero-contact-form-grid p input:-ms-input-placeholder {
+  color: #000000;
+  text-align: left;
+  padding-left: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.hero-contact-form-grid p input::-ms-input-placeholder {
+  color: #000000;
+  text-align: left;
+  padding-left: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.hero-contact-form-grid p input::placeholder {
+  color: #000000;
+  text-align: left;
+  padding-left: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .hero-content {
@@ -945,7 +1019,6 @@ nav ul li ul li a {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
 #value-props-home .overlay {
@@ -959,7 +1032,7 @@ nav ul li ul li a {
 }
 
 .solutions-content {
-  padding: 2rem;
+  padding: 1.25rem;
   background: rgba(255, 255, 255, 0.95);
   -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
