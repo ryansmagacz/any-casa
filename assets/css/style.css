@@ -186,7 +186,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media screen and (min-width: 720px) {
   .h2 {
-    font-size: 2.2rem;
+    font-size: 2.2rem !important;
   }
 }
 
@@ -196,17 +196,27 @@ h1, h2, h3, h4, h5, h6 {
 
 @media screen and (min-width: 720px) {
   .h3 {
-    font-size: 2rem;
+    font-size: 2rem !important;
   }
 }
 
 .h4 {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 @media screen and (min-width: 720px) {
   .h4 {
-    font-size: 1.75rem;
+    font-size: 1.75rem !important;
+  }
+}
+
+.p {
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 720px) {
+  .p {
+    font-size: 1.75rem !important;
   }
 }
 
@@ -1515,11 +1525,10 @@ nav ul li ul li a {
 }
 
 .contact-form-grid p input {
-  font-size: 1.1rem;
+  font-size: 1rem;
   width: 100%;
-  font-size: 1.1rem;
-  border: 1px solid #f4f4f4;
-  padding: 0.5rem;
+  border: 1px solid #000000;
+  padding: 0.5rem 0.25rem;
   margin-left: -0.5rem;
   border-radius: 4px !important;
   color: #000000;
@@ -1529,29 +1538,21 @@ nav ul li ul li a {
 .contact-form-grid p input::-webkit-input-placeholder {
   color: #000000;
   text-align: left;
-  letter-spacing: 1px;
-  text-transform: uppercase;
 }
 
 .contact-form-grid p input:-ms-input-placeholder {
   color: #000000;
   text-align: left;
-  letter-spacing: 1px;
-  text-transform: uppercase;
 }
 
 .contact-form-grid p input::-ms-input-placeholder {
   color: #000000;
   text-align: left;
-  letter-spacing: 1px;
-  text-transform: uppercase;
 }
 
 .contact-form-grid p input::placeholder {
   color: #000000;
   text-align: left;
-  letter-spacing: 1px;
-  text-transform: uppercase;
 }
 
 .grid-section p.pill-select {
