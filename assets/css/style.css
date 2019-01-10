@@ -761,6 +761,7 @@ nav ul li ul li a {
 }
 
 .popup-contact-form-grid p input {
+  font-size: 1rem !important;
   border: 0;
   width: 100%;
   color: #000;
@@ -793,6 +794,11 @@ nav ul li ul li a {
   color: #000000;
   text-align: left;
   padding-left: 10px;
+}
+
+.popup-contact-form-grid p.pill-select {
+  color: #000000 !important;
+  font-size: 1rem !important;
 }
 
 .footer-logo {
@@ -863,42 +869,44 @@ nav ul li ul li a {
 
 .hero-contact-form-grid p {
   padding: 0 1rem;
+  margin: 0.35rem 0;
 }
 
 .hero-contact-form-grid p input {
+  font-size: 1.2rem;
   border: 0;
   width: 100%;
   border: 1px solid #ffffff;
   padding: 0.5rem;
   margin-left: -0.5rem;
   border-radius: 4px !important;
-  color: #000;
+  color: #fff;
   background: rgba(255, 255, 255, 0.2);
 }
 
 .hero-contact-form-grid p input::-webkit-input-placeholder {
-  color: #000000;
+  color: #ffffff;
   text-align: left;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
 
 .hero-contact-form-grid p input:-ms-input-placeholder {
-  color: #000000;
+  color: #ffffff;
   text-align: left;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
 
 .hero-contact-form-grid p input::-ms-input-placeholder {
-  color: #000000;
+  color: #ffffff;
   text-align: left;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
 
 .hero-contact-form-grid p input::placeholder {
-  color: #000000;
+  color: #ffffff;
   text-align: left;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -906,6 +914,8 @@ nav ul li ul li a {
 
 .grid-section p.pill-select {
   padding: 0.5rem !important;
+  color: #ffffff;
+  font-size: 1.2rem;
 }
 
 .hero-content {

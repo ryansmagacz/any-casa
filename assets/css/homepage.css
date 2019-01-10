@@ -34,9 +34,7 @@
 
 #home-page-main-grid .header header .nav-container nav .nav-mobile {
   cursor: pointer;
-  border-radius: 50%;
-  -webkit-box-shadow: 0 0px 8px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0px 8px rgba(0, 0, 0, 0.3);
+  background: transparent !important;
   margin-right: 1rem;
 }
 

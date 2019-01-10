@@ -81,8 +81,7 @@ $bp-xl: 1280px;
                     
                     & .nav-mobile {
                         cursor: pointer;
-                        border-radius: 50%;
-                        box-shadow: 0 0px 8px rgba($black,0.3);
+                        background: transparent !important;
                         margin-right: 1rem;
                         
 
