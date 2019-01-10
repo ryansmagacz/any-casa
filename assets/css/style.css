@@ -258,6 +258,10 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 !important;
 }
 
+.no-top-margin {
+  margin-top: 0 !important;
+}
+
 .margin-2 {
   margin: 2rem;
 }
@@ -829,7 +833,7 @@ nav ul li ul li a {
   position: relative;
   z-index: 0;
   min-height: 400px;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .hero-grid .overlay {
