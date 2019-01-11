@@ -439,6 +439,24 @@ hr {
     }
 }
 
+.blue-green-primary-button {
+    @extend %button-base, %box-shadow-hover;
+    background: $colorBlue !important;
+    color: $white !important;
+    
+
+    &:hover {
+        background: $colorMainLight !important;
+        color: $colorSecondDark !important;
+    }
+}
+
+.little-links {
+    font-size: 1rem;
+    color: $white;
+    line-height: 1rem;
+}
+
 .big-button {
     font-size: 1.35rem;
     padding: 1rem 0;
