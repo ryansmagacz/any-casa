@@ -1004,7 +1004,7 @@ hr {
 .home-intro {
     @extend %section-padding;
     width: 100%;
-    background: #fcfcfc;
+    background: #fafafa;
     
 }
 
@@ -1087,7 +1087,7 @@ hr {
         left: 0;
         width: 100%;
         height: 100%;
-        background: radial-gradient(rgba($dark-blue, 0.82), rgba($colorBlue, 0.5));
+        background: radial-gradient(rgba($colorBlue, .6), rgba($dark-blue, 0.75));
         z-index: -1;
     }
 
@@ -1271,8 +1271,8 @@ hr {
 
 // SERVICES PAGE
 #services-section {
-    background: #fafafa;
-    color: #000;
+    background: linear-gradient(to top, $colorBlueBright, $colorBlue);
+    color: $white;
 }
 
 .services-mobile-heading {
@@ -1305,6 +1305,17 @@ hr {
     }
 }
 
+
+// .advantage-span {
+//     color: $white;
+//     text-shadow: 2px 2px $black;
+
+//     @include media($min:$bp-small) {
+//         text-shadow: 3px 4px $black;
+//     }
+// }
+
+
 .video-services {
     & iframe {
         height: 200px;
@@ -1324,6 +1335,7 @@ hr {
 }
 
 // CONTACT PAGE
+
 .contact-page-heading, .services-mobile-heading {
     
     & .heading-div {
@@ -1511,7 +1523,7 @@ hr {
 // CONTACT FORM
 #contact-form-section {
     background: #fff;
-    box-shadow: 0 10px 22px rgba(0,0,0,0.25);   
+    box-shadow: 0 10px 22px rgba(0,0,0,0.5);   
 
     & #contact-form {
         padding: 1.75rem;
@@ -1556,13 +1568,9 @@ hr {
 }
 
 #contact-form-title {
-    background: #396afc;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #2948ff, #396afc);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #2948ff, #396afc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-    color: #ffffff;
+    color: #000000;
     margin: 0;
-    padding: 2rem 0;
+    padding: 2rem 2rem 0;
     line-height: 2rem;
 
     @include media ($min: $bp-small) {
@@ -1570,3 +1578,4 @@ hr {
     }
 
 }
+
