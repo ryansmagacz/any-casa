@@ -37,7 +37,7 @@
 </head>
 <body>
 	<!-- SLIM BANNER -->
-	<div class="section thin-banner no-margin" style="max-height: 3rem;background: #0062b0;color: #fff;">
+	<div class="section thin-banner no-margin fade-in">
 		<div class="grid nav-container">
 			<p class="no-margin text-rt-center-mobile" style="margin: 5px 0 !important;">
 				Questions? Call <a style="color: #fff;" href="tel:+1800555555">(800) 555-5555</a>
@@ -126,28 +126,28 @@
                 </div>
 
                 <div class="section section-padding text-center" id="advantages">
-					<h2 class="h1 raleway text-center"><span class="font-700 font-blue" data-aos='fade-right' data-aos-duration="1000" data-aos-delay="100">We work hard </span><span data-aos='fade-left' data-aos-duration="1000" data-aos-delay="1200" class="font-300">so you don't have to</span></h2><br>
-                    <div class="grid content-width margin-auto grid-gap-1-3 quarters-1" data-aos='fade-up' data-aos-duration="800" data-aos-delay="100">
+					<h2 class="h1 raleway text-center"><span class="font-700 font-blue" data-aos='fade-right' data-aos-duration="1000" data-aos-delay="300">We work hard </span><span data-aos='fade-left' data-aos-duration="1000" data-aos-delay="1200" class="font-300">so you don't have to</span></h2><br>
+                    <div class="grid content-width margin-auto grid-gap-1-3 quarters-1">
                        
-                        <div class="text-center">
+                        <div class="text-center" data-aos='fade-up' data-aos-duration="800">
                             <img class="icon-image margin-auto" src="assets/img/icons/magnifyingglass.svg" alt="tenant selection for property management icon - ER Property Solutions, Los Angeles Property Management">
                             <h2 class="h4">Tenant Selection</h2>
                             <p>Finding the right tenant is almost as important as finding the right property management company. ER Property Solutions employs a comprehensive process for selecting the right tenants</p>
                         </div>
 
-                        <div class="text-center">
+                        <div class="text-center" data-aos='fade-up' data-aos-duration="800">
                             <img class="icon-image margin-auto" src="assets/img/icons/repairs.svg" alt="maintenance and repairs for property management icon - ER Property Solutions, Los Angeles Property Management">
                             <h2 class="h4">Maintenance</h2>
                             <p>Finding the right tenant is almost as important as finding the right property management company. ER Property Solutions employs a comprehensive process for selecting the right tenants</p>
                         </div>
 
-                        <div class="text-center">
+                        <div class="text-center" data-aos='fade-up' data-aos-duration="800">
                             <img class="icon-image margin-auto" src="assets/img/icons/homemoney.svg" alt="tenant selection icon - ER Property Solutions, Los Angeles Property Management">
                             <h2 class="h4">Accounting</h2>
                             <p>Finding the right tenant is almost as important as finding the right property management company. ER Property Solutions employs a comprehensive process for selecting the right tenants</p>
                         </div>
 
-                        <div class="text-center">
+                        <div class="text-center" data-aos='fade-up' data-aos-duration="800">
                             <img class="icon-image margin-auto" src="assets/img/icons/marketing.svg" alt="tenant selection icon - ER Property Solutions, Los Angeles Property Management">
                             <h2 class="h4">Marketing</h2>
                             <p>Finding the right tenant is almost as important as finding the right property management company. ER Property Solutions employs a comprehensive process for selecting the right tenants</p>
@@ -337,6 +337,14 @@
 		    $('#popup').fadeIn();
 		  });
 		  
+		});
+	</script>
+
+	<script>
+		$(document).ready(function() {
+		
+			$(".fade-in").delay(2000).slideDown();
+			
 		});
 	</script>
 </body>

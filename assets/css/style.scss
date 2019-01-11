@@ -297,7 +297,17 @@ h1, h2, h3, h4, h5, h6 {
 
 .thin-banner {
     background: $colorBlue;
-    color: #fff;
+    color: $white;
+}
+
+.thick-banner {
+    background: $colorBlue;
+    color: $white;
+    padding: 6px 0;
+}
+
+.fade-in {
+    display: none;
 }
 
 

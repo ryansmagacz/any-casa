@@ -37,7 +37,7 @@
 <body>
 
 	<!-- SLIM BANNER -->
-	<div class="section thin-banner no-margin" style="max-height: 3rem;background: #0062b0;color: #fff;">
+	<div class="section thick-banner no-margin fade-in">
 		<div class="grid nav-container">
 			<p class="no-margin text-rt-center-mobile" style="margin: 5px 0 !important;">
 				Questions? Call <a style="color: #fff;" href="tel:+1800555555">(800) 555-5555</a>
@@ -153,6 +153,13 @@
 		        mirror: false, // whether elements should animate out while scrolling past them
 		
 		    });
+	</script>
+	<script>
+		$(document).ready(function() {
+		
+			$(".fade-in").delay(2000).slideDown();
+			
+		});
 	</script>
 </body>
 

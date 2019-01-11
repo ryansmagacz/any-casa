@@ -250,7 +250,17 @@ h1, h2, h3, h4, h5, h6 {
 
 .thin-banner {
   background: #0062b0;
-  color: #fff;
+  color: #ffffff;
+}
+
+.thick-banner {
+  background: #0062b0;
+  color: #ffffff;
+  padding: 6px 0;
+}
+
+.fade-in {
+  display: none;
 }
 
 .relative {
