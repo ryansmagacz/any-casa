@@ -37,12 +37,10 @@
 
 <body>
 	<!-- SLIM BANNER -->
-	<div class="section thin-banner no-margin" style="max-height: 3rem;background: #0062b0;color: #fff;">
-		<div class="grid nav-container">
-			<p class="no-margin text-rt-center-mobile" style="margin: 5px 0 !important;">Questions? Call <a style="color: #fff;" href="tel:+1800555555">(800) 555-5555</a>
-			</p>
-		</div>
+	<div class="section thin-banner no-margin">
+			<p class="no-margin text-rt-center-mobile" style="">Tenant Login | Owner Login</p>
 	</div>
+
 	<div class="site-wrapper">
 		<div class="main-grid">
 			<div class="header-wrapper">
@@ -66,7 +64,7 @@
 									<li>
 										<a href="property-management-services.html">Our Services</a>
 									</li>
-									<li>
+									<!-- <li>
 										<a href="#!">Login</a>
 										<ul class="nav-dropdown">
 											<li>
@@ -76,9 +74,10 @@
 												<a href="#!">Tenants</a>
 											</li>
 										</ul>
-									</li>
+									</li> -->
 									<li> <a href="contact.html">Contact</a>
 									</li>
+									
 							</ul>
 						</nav>
 					</div>
@@ -114,7 +113,7 @@
 						<!-- CONTACT FORM -->
 						<div class="section margin-auto" id="contact-form-section">
 							<div class="grid">
-								<h2 class="h3 lato text-center font-black">Send Us a Message</h2>
+								<p class="h2 raleway text-center" id="contact-form-title"><strong>Questions?</strong> <br>Send us a message!</p>
 								<form name="contact-form" method="POST" id="contact-form" netlify>
 									<div class="grid-section contact-form-grid">
 										<p>
@@ -143,12 +142,15 @@
 											<!-- <label class="hero-form-label" for="message">Message: </label> -->
 											<input type="text" name="message" id="message" placeholder="Message" value> 
 										</p>
+										<button type="submit" class="section green-blue-primary-button" style="padding: 1rem 0;margin: 1rem 0 0;">SEND MESSAGE</button>
 									</div>
-									<button type="submit" class="section green-blue-primary-button slim-margin" style="padding: 1rem 0;">REQUEST QUOTE NOW</button>
 								</form>
 								<!-- <p class="text-center font-white">or call (800) 555-5555</p> -->
 							</div>
 						</div>
+						<!-- END OF CONTACT FORM DIV -->
+
+
 					</div>
 				</div>				
 
@@ -182,7 +184,6 @@
 	<script>
 		AOS.init({
 		        // Global settings:
-		        disable: 'phone', // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
 		        once: true, // whether animation should happen only once - while scrolling down
 		        mirror: false, // whether elements should animate out while scrolling past them
 		

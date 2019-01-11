@@ -55,6 +55,16 @@
   }
 }
 
+.smaller-section-padding {
+  padding: 1rem 0;
+}
+
+@media screen and (min-width: 720px) {
+  .smaller-section-padding {
+    padding: 2rem 0;
+  }
+}
+
 .hero-grid .overlay, .about-mobile-heading .overlay, .services-mobile-heading .overlay {
   position: absolute;
   top: 0;
@@ -238,6 +248,11 @@ h1, h2, h3, h4, h5, h6 {
       grid-template-rows: 70px auto 100px;
 }
 
+.thin-banner {
+  background: #0062b0;
+  color: #fff;
+}
+
 .relative {
   position: relative !important;
 }
@@ -293,6 +308,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .slim-margin {
   margin: 0.5rem auto;
+}
+
+.margin-1-auto {
+  margin: 1rem auto;
+}
+
+.margin-2-auto {
+  margin: 2rem auto;
 }
 
 .bxs-med {
@@ -447,6 +470,17 @@ hr {
 
 @media screen and (min-width: 1280px) {
   .content-width {
+    max-width: 66rem;
+  }
+}
+
+.content-width-95 {
+  margin: auto;
+  max-width: 95%;
+}
+
+@media screen and (min-width: 1280px) {
+  .content-width-95 {
     max-width: 66rem;
   }
 }
@@ -1511,12 +1545,18 @@ nav ul li ul li a {
 
 #contact-form-section {
   background: #fff;
-  -webkit-box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
-          box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 10px 22px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 10px 22px rgba(0, 0, 0, 0.25);
 }
 
 #contact-form-section #contact-form {
-  padding: 1rem;
+  padding: 1.75rem;
+}
+
+@media screen and (min-width: 720px) {
+  #contact-form-section #contact-form {
+    padding: 2.15rem;
+  }
 }
 
 .contact-form-grid p {
@@ -1559,5 +1599,24 @@ nav ul li ul li a {
   padding: 0 0.45rem !important;
   color: #000000;
   font-size: 1.1rem;
+}
+
+#contact-form-title {
+  background: #396afc;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left bottom, left top, from(#2948ff), to(#396afc));
+  background: linear-gradient(to top, #2948ff, #396afc);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #ffffff;
+  margin: 0;
+  padding: 2rem 0;
+  line-height: 2rem;
+}
+
+@media screen and (min-width: 720px) {
+  #contact-form-title {
+    line-height: 3rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

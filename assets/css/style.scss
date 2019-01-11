@@ -8,8 +8,11 @@ $aqua-dark: #01cccc;
 $colorMain: #00ff66;
 $colorSecond: #022f57;
 $colorBlue: #0062b0;
+$colorBlueBright: #2948ff;
+$colorBlueDark: #0c4e82;
 $colorMainLight: #67ffa4;
 $colorSecondDark: #182129;
+$colorSecondDark2: #373B44;
 
 $bxs-slight: 0 0 3px rgba(0,0,0,0.25);
 $bxs-light: 0 0 5px rgba(0,0,0,0.3);
@@ -110,6 +113,15 @@ $quick-trans: all 0.2s ease-out;
         padding: 3rem 0;
     }
 }
+
+%smaller-section-padding {
+    padding: 1rem 0;
+    
+    @include media($min: $bp-small) {
+        padding: 2rem 0;
+    }
+}
+
 
 %overlay {
     position: absolute;
@@ -283,6 +295,10 @@ h1, h2, h3, h4, h5, h6 {
     grid-template-rows: $nav-height auto 100px;
 }
 
+.thin-banner {
+    background: $colorBlue;
+    color: #fff;
+}
 
 
 // CLEAN REUSABLE CLASSES
@@ -340,6 +356,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .slim-margin {
     margin: 0.5rem auto;
+}
+.margin-1-auto {
+    margin: 1rem auto;
+}
+
+.margin-2-auto {
+    margin: 2rem auto;
 }
 
 .bxs-med {
@@ -481,6 +504,10 @@ hr {
     @extend %small-section-padding;
 }
 
+.smaller-section-padding {
+    @extend %smaller-section-padding;
+}
+
 .top-section-padding {
     padding: 2rem 0 0 0;
 }
@@ -502,6 +529,15 @@ hr {
 .content-width {
     margin: auto;
     max-width: $content-width-90;
+
+    @include media($min: $bp-xl) {
+        max-width: $content-width-xl;
+    }
+}
+
+.content-width-95 {
+    margin: auto;
+    max-width: $content-width-95;
 
     @include media($min: $bp-xl) {
         max-width: $content-width-xl;
@@ -1475,10 +1511,14 @@ hr {
 // CONTACT FORM
 #contact-form-section {
     background: #fff;
-    box-shadow: 0 0 12px rgba(0,0,0,0.15);   
+    box-shadow: 0 10px 22px rgba(0,0,0,0.25);   
 
     & #contact-form {
-        padding: 1rem;
+        padding: 1.75rem;
+
+        @include media($min:$bp-small){
+            padding: 2.15rem;
+        }
     }
 }
 
@@ -1513,4 +1553,20 @@ hr {
         color: $black;
         font-size: 1.1rem;
     }
+}
+
+#contact-form-title {
+    background: #396afc;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #2948ff, #396afc);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #2948ff, #396afc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color: #ffffff;
+    margin: 0;
+    padding: 2rem 0;
+    line-height: 2rem;
+
+    @include media ($min: $bp-small) {
+        line-height: 3rem;
+    }
+
 }
