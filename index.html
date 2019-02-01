@@ -35,6 +35,8 @@
     <!-- <link rel="stylesheet" href="assets/css/navbar.css"> -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/homepage.css">
+
+    <script type="text/javascript">(function(o){var b="https://api.autopilothq.com/anywhere/",t="c98a6475aae34a4c91b2c2fa06ee47264c6caf3e2adf43d5b31e7a5f0c4b826f",a=window.AutopilotAnywhere={_runQueue:[],run:function(){this._runQueue.push(arguments);}},c=encodeURIComponent,s="SCRIPT",d=document,l=d.getElementsByTagName(s)[0],p="t="+c(d.title||"")+"&u="+c(d.location.href||"")+"&r="+c(d.referrer||""),j="text/javascript",z,y;if(!window.Autopilot) window.Autopilot=a;if(o.app) p="devmode=true&"+p;z=function(src,asy){var e=d.createElement(s);e.src=src;e.type=j;e.async=asy;l.parentNode.insertBefore(e,l);};y=function(){z(b+t+'?'+p,true);};if(window.attachEvent){window.attachEvent("onload",y);}else{window.addEventListener("load",y,false);}})({});</script>
     
 </head>
 <body>
@@ -309,7 +311,7 @@
                     <h3 class="text-center">Ready to maximize your rental income?</h3>
                     <p class="tablet-up">Enter your information below, and a team member will contact you in 24 hours.</p>
                     <!-- <p class="text-left-center-mobile lato">Affordable property management in Los Angeles from experienced professionals</p> -->
-                    <form action="" name="quote-popup-form" method="POST" id="quote-popup-form" netlify>
+                    <form name="quote-popup-form" method="POST" id="quote-popup-form" netlify>
                         <div class="grid-section popup-contact-form-grid">
                             <p>
                                 <input type="text" name="name" id="name" placeholder="Name" value required>  
@@ -322,26 +324,26 @@
 
                             <p>
                                 <!-- <label class="hero-form-label" for="first_name">Phone: </label> -->
-                                <input type="tel" name="name" id="phone" placeholder="Phone Number (optional)" value>  
+                                <input type="tel" name="phone" id="phone" placeholder="Phone Number (optional)" value>  
                             </p>
 
                             <p class="pill-select">
-                                <select style="padding-left: 6px; outline: 0;border: 1px solid #000; background: transparent; width: 100% !important; height: 45px;margin-bottom: 1rem;">
-                                    <option value="" value="" disabled selected>Select your property type (optional)</option>
-                                    <option value="">Single Family Home/Townhome/Condominium</option>
-                                    <option value="">Multi-plex</option>
-                                    <option value="">Small Apartment Building (under 10 units)</option>
-                                    <option value="">Large Apartment Building (10+ units)</option>
-                                    <option value="">Commercial/Business Building</option>
-                                    <option value="">Vacation Rental (includes Airbnb/VRBO)</option>
-                                    <option value="">Other/Not Listed</option>
+                                <select name="propertytype[]" style="padding-left: 6px; outline: 0;border: 1px solid #000; background: transparent; width: 100% !important; height: 45px;margin-bottom: 1rem;">
+                                    <option value="" disabled selected>Select your property type (optional)</option>
+                                    <option value="Single Family Home/Townhome/Condominium">Single Family Home/Townhome/Condominium</option>
+                                    <option value="Multi-plex">Multi-plex</option>
+                                    <option value="Small Apartment Building">Small Apartment Building (under 10 units)</option>
+                                    <option value="Large Apartment Building">Large Apartment Building (10+ units)</option>
+                                    <option value="Commercial">Commercial/Business Building</option>
+                                    <option value="Vacation">Vacation Rental (includes Airbnb/VRBO)</option>
+                                    <option value="Other">Other/Not Listed</option>
                                 </select>
                                 <!-- <label class="hero-form-label" for="message">Message: </label> -->
                                 <!-- <input type="text" name="message" id="message" placeholder="Message" value>  -->
                             </p>
-                    </div>
+                        </div>
                         
-                    <button type="submit" class="section green-blue-primary-button">REQUEST QUOTE</button>
+                        <button type="submit" class="section green-blue-primary-button">REQUEST QUOTE</button>
 
                     </form>
                 </div>
