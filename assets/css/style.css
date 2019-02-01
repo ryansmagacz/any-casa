@@ -363,18 +363,35 @@ hr {
 .copyright {
   position: relative;
   padding: 0;
-  margin: 0 0 10px;
-  opacity: 0.4;
+  margin: 0 0;
+  opacity: 0.3;
+  letter-spacing: 3px;
+}
+
+.copyright p {
+  margin-bottom: 0;
 }
 
 .copyright p a {
   text-decoration: none;
-  font-size: 0.8em;
-  color: #000000;
+  font-size: 0.65em;
+  color: #062438;
 }
 
 .copyright:hover {
   opacity: 1;
+  letter-spacing: 4px;
+}
+
+@media screen and (min-width: 720px) {
+  .copyright p {
+    margin-bottom: 0;
+  }
+  .copyright p a {
+    text-decoration: none;
+    font-size: 0.8em;
+    color: #000000;
+  }
 }
 
 .alt-primary-button {

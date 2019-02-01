@@ -406,21 +406,40 @@ hr {
 }
 
 .copyright {
+
     @extend %trans;
     position: relative; 
     padding: 0; 
-    margin: 0 0 10px; 
-    opacity: 0.4;
+    margin: 0 0; 
+    opacity: 0.3;
+    letter-spacing: 3px;
 
     
-    & p a {
-        text-decoration: none;
-        font-size: 0.8em;
-        color: #000000;
+    & p {
+        margin-bottom: 0;
+        
+        & a {
+            text-decoration: none;
+            font-size: 0.65em;
+            color: #062438;
+        }
     }
 
     &:hover {
         opacity: 1;
+        letter-spacing: 4px;
+    }
+
+    @include media ($min: $bp-small) {
+        & p {
+            margin-bottom: 0;
+            
+            & a {
+                text-decoration: none;
+                font-size: 0.8em;
+                color: #000000;
+            }
+        }
     }
 }
 
