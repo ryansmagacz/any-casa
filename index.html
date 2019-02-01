@@ -126,15 +126,15 @@
                                                 <input type="tel" name="phone" id="phone" placeholder="Phone Number (optional)" value>
                                             </p>
                                             <p class="pill-select hero-pill-select">
-                                                <select style="letter-spacing: 1px;text-transform: uppercase;outline: 0;border: 1px solid #fff; background: rgba(255,255,255, 0.2); color: #fff; width: 100% !important; height: 45px;margin-bottom: 1rem;">
+                                                <select name="propertytype[]" multiple style="letter-spacing: 1px;text-transform: uppercase;outline: 0;border: 1px solid #fff; background: rgba(255,255,255, 0.2); color: #fff; width: 100% !important; height: 45px;margin-bottom: 1rem;">
                                                     <option value="" disabled selected>Select your property type</option>
-                                                    <option>Single Family Home/Townhome/Condominium</option>
-                                                    <option>Multi-plex</option>
-                                                    <option>Small Apartment Building (under 10 units)</option>
-                                                    <option>Large Apartment Building (10+ units)</option>
-                                                    <option>Commercial/Business Building</option>
-                                                    <option>Vacation Rental (includes Airbnb/VRBO)</option>
-                                                    <option>Other/Not Listed</option>
+                                                    <option value="Single Family Home/Townhome/Condominium">Single Family Home/Townhome/Condominium</option>
+                                                    <option value="multi-plex">Multi-plex</option>
+                                                    <option value="Small Apartment Building">Small Apartment Building (under 10 units)</option>
+                                                    <option value="large Apartment Building">Large Apartment Building (10+ units)</option>
+                                                    <option value="Commercial/Business Building">Commercial/Business Building</option>
+                                                    <option value="Vacation Rental">Vacation Rental (includes Airbnb/VRBO)</option>
+                                                    <option value="Other">Other/Not Listed</option>
                                                 </select>
                                                 <!-- <label class="hero-form-label" for="message">Message: </label> -->
                                                 <!-- <input type="text" name="message" id="message" placeholder="Message" value>  -->
@@ -328,14 +328,14 @@
 
                             <p class="pill-select">
                                 <select style="padding-left: 6px; outline: 0;border: 1px solid #000; background: transparent; width: 100% !important; height: 45px;margin-bottom: 1rem;">
-                                    <option value="" disabled selected>Select your property type (optional)</option>
-                                    <option>Single Family Home/Townhome/Condominium</option>
-                                    <option>Multi-plex</option>
-                                    <option>Small Apartment Building (under 10 units)</option>
-                                    <option>Large Apartment Building (10+ units)</option>
-                                    <option>Commercial/Business Building</option>
-                                    <option>Vacation Rental (includes Airbnb/VRBO)</option>
-                                    <option>Other/Not Listed</option>
+                                    <option value="" value="" disabled selected>Select your property type (optional)</option>
+                                    <option value="">Single Family Home/Townhome/Condominium</option>
+                                    <option value="">Multi-plex</option>
+                                    <option value="">Small Apartment Building (under 10 units)</option>
+                                    <option value="">Large Apartment Building (10+ units)</option>
+                                    <option value="">Commercial/Business Building</option>
+                                    <option value="">Vacation Rental (includes Airbnb/VRBO)</option>
+                                    <option value="">Other/Not Listed</option>
                                 </select>
                                 <!-- <label class="hero-form-label" for="message">Message: </label> -->
                                 <!-- <input type="text" name="message" id="message" placeholder="Message" value>  -->
