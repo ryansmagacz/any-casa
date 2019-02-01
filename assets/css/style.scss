@@ -405,7 +405,24 @@ hr {
     border-color: $colorMainLight;
 }
 
+.copyright {
+    @extend %trans;
+    position: relative; 
+    padding: 0; 
+    margin: 0 0 10px; 
+    opacity: 0.4;
 
+    
+    & p a {
+        text-decoration: none;
+        font-size: 0.8em;
+        color: #000000;
+    }
+
+    &:hover {
+        opacity: 1;
+    }
+}
 
 
 
