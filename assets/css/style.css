@@ -3,14 +3,14 @@
   transition: all 0.2s ease-out;
 }
 
-.button, .alt-primary-button, .primary-button, .green-blue-primary-button, .blue-green-primary-button {
+.button, .alt-primary-button, .primary-button, .green-blue-primary-button, .green-white-primary-button, .blue-green-primary-button {
   -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
 
-.button:hover, .alt-primary-button:hover, .primary-button:hover, .green-blue-primary-button:hover, .blue-green-primary-button:hover {
+.button:hover, .alt-primary-button:hover, .primary-button:hover, .green-blue-primary-button:hover, .green-white-primary-button:hover, .blue-green-primary-button:hover {
   -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
           box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
@@ -19,7 +19,7 @@
   text-shadow: 2px 2px rgba(0, 0, 0, 0.75);
 }
 
-.button, .alt-primary-button, .primary-button, .green-blue-primary-button, .blue-green-primary-button {
+.button, .alt-primary-button, .primary-button, .green-blue-primary-button, .green-white-primary-button, .blue-green-primary-button {
   padding: 0.5rem 1.2rem;
   border: 1px solid transparent;
   border-radius: 4px;
@@ -392,6 +392,16 @@ hr {
 .green-blue-primary-button:hover {
   background: #0062b0 !important;
   color: #ffffff !important;
+}
+
+.green-white-primary-button {
+  background: #67ffa4 !important;
+  color: #182129 !important;
+}
+
+.green-white-primary-button:hover {
+  background: #ffffff !important;
+  color: #000000 !important;
 }
 
 .blue-green-primary-button {

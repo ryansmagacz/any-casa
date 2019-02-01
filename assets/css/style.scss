@@ -453,6 +453,18 @@ hr {
     }
 }
 
+.green-white-primary-button {
+    @extend %button-base, %box-shadow-hover;
+    background: $colorMainLight !important;
+    color: $colorSecondDark !important;
+    
+
+    &:hover {
+        background: #ffffff !important;
+        color: #000000 !important;
+    }
+}
+
 .blue-green-primary-button {
     @extend %button-base, %box-shadow-hover;
     background: $colorBlue !important;
