@@ -112,7 +112,7 @@
                             <div class="section margin-auto">
                                 <div class="grid herocontactform">
                                     <h2 class="h2 contact-form-title text-center font-white text-shadow no-top-margin">Get your free quote today!</h2>
-                                    <form name="contact-form" method="POST" id="contact-form" netlify>
+                                    <form name="contact-form-home" method="POST" id="contact-form" netlify>
                                         <div class="grid-section hero-contact-form-grid">
                                             <p>
                                                 <input type="text" name="name" id="name" placeholder="Name" value required>
@@ -126,7 +126,7 @@
                                                 <input type="tel" name="phone" id="phone" placeholder="Phone Number (optional)" value>
                                             </p>
                                             <p class="pill-select hero-pill-select">
-                                                <select name="propertytype[]" style="letter-spacing: 1px;text-transform: uppercase;outline: 0;border: 1px solid #fff; background: rgba(255,255,255, 0.2); color: #fff; width: 100% !important; height: 45px;margin-bottom: 1rem;">
+                                                <select name="propertytype[]" multiple style="letter-spacing: 1px;text-transform: uppercase;outline: 0;border: 1px solid #fff; background: rgba(255,255,255, 0.2); color: #fff; width: 100% !important; height: 45px;margin-bottom: 1rem;">
                                                     <option value="" disabled selected>Select your property type</option>
                                                     <option value="Single Family Home/Townhome/Condominium">Single Family Home/Townhome/Condominium</option>
                                                     <option value="multi-plex">Multi-plex</option>
@@ -136,8 +136,7 @@
                                                     <option value="Vacation Rental">Vacation Rental (includes Airbnb/VRBO)</option>
                                                     <option value="Other">Other/Not Listed</option>
                                                 </select>
-                                                <!-- <label class="hero-form-label" for="message">Message: </label> -->
-                                                <!-- <input type="text" name="message" id="message" placeholder="Message" value>  -->
+                                                
                                             </p>
                                         </div>
                                         <button type="submit" class="section green-blue-primary-button" style="padding: 1rem 0;">REQUEST QUOTE NOW</button>
