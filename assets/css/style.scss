@@ -411,7 +411,7 @@ hr {
     position: relative; 
     padding: 0; 
     margin: 0 0; 
-    opacity: 0.3;
+    opacity: 0.25;
     letter-spacing: 3px;
 
     
@@ -426,21 +426,10 @@ hr {
     }
 
     &:hover {
-        opacity: 1;
-        letter-spacing: 4px;
+        opacity: .8;
     }
 
-    @include media ($min: $bp-small) {
-        & p {
-            margin-bottom: 0;
-            
-            & a {
-                text-decoration: none;
-                font-size: 0.8em;
-                color: #000000;
-            }
-        }
-    }
+    
 }
 
 

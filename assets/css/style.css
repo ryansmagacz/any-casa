@@ -364,7 +364,7 @@ hr {
   position: relative;
   padding: 0;
   margin: 0 0;
-  opacity: 0.3;
+  opacity: 0.25;
   letter-spacing: 3px;
 }
 
@@ -379,19 +379,7 @@ hr {
 }
 
 .copyright:hover {
-  opacity: 1;
-  letter-spacing: 4px;
-}
-
-@media screen and (min-width: 720px) {
-  .copyright p {
-    margin-bottom: 0;
-  }
-  .copyright p a {
-    text-decoration: none;
-    font-size: 0.8em;
-    color: #000000;
-  }
+  opacity: .8;
 }
 
 .alt-primary-button {
