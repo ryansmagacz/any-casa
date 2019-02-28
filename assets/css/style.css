@@ -1,4 +1,4 @@
-.copyright, .button, .alt-primary-button, .footer-menu a {
+.copyright, .button, .alt-primary-button, .footer-menu a, .footer-menu span {
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
@@ -917,7 +917,7 @@ nav ul li ul li a {
   max-width: 120px;
 }
 
-.footer-menu a {
+.footer-menu a, .footer-menu span {
   font-size: 0.65rem;
   text-decoration: none;
   color: #182129;
@@ -927,12 +927,12 @@ nav ul li ul li a {
   cursor: pointer;
 }
 
-.footer-menu a:hover {
+.footer-menu a:hover, .footer-menu span:hover {
   color: #0062b0;
 }
 
 @media screen and (min-width: 720px) {
-  .footer-menu a {
+  .footer-menu a, .footer-menu span {
     font-size: .85rem;
   }
 }
