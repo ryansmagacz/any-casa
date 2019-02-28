@@ -9,6 +9,13 @@
 	],
 "creatorBuild": "28905",
 "files": {
+	"/_redirects": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "/_redirects",
+		"oF": 0
+		},
 	"/about.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -145,6 +152,23 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
+		},
+	"/assets/css/underline.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/assets/css/underline-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/assets/css/underline.css.map": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/assets/css/underline.css.map",
+		"oF": 0
 		},
 	"/assets/css/underline.scss": {
 		"aP": 0,
@@ -333,6 +357,17 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"q": 100
+		},
+	"/assets/img/favicon.png": {
+		"ft": 32768,
+		"iS": 1915,
+		"oA": 0,
+		"oAP": "/assets/img/favicon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"/assets/img/gallery_1.jpeg": {
@@ -687,6 +722,13 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/assets/img/Industries_dell_client_solutions_for_retail_brochure.pdf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/assets/img/Industries_dell_client_solutions_for_retail_brochure.pdf",
+		"oF": 0
+		},
 	"/assets/img/la800x400.jpg": {
 		"ft": 16384,
 		"iS": 216946,
@@ -831,20 +873,6 @@
 		"oAP": "/index.html",
 		"oF": 0
 		},
-	"/index1-9.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/index1-9.html",
-		"oF": 0
-		},
-	"/indexold.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/indexold.html",
-		"oF": 0
-		},
 	"/login.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -877,18 +905,18 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"/services.html": {
+	"/robots.txt": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "/services.html",
+		"oAP": "/robots.txt",
 		"oF": 0
 		},
-	"/solutions-for-owners.html": {
+	"/sitemap.xml": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "/solutions-for-owners.html",
+		"oAP": "/sitemap.xml",
 		"oF": 0
 		}
 	},
