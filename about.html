@@ -255,7 +255,7 @@
 						<h3 class="text-center">Ready to maximize your rental income?</h3>
 						<p class="tablet-up">Enter your information below, and a team member will contact you in 24 hours.</p>
 						<!-- <p class="text-left-center-mobile lato">Affordable property management in Los Angeles from experienced professionals</p> -->
-						<form action="" name="quote-popup-form-about" method="POST" id="quote-popup-form" netlify>
+						<form action="" name="quote-popup-form-about" method="POST" id="quote-popup-form" data-netlify-recaptcha="true" netlify>
 							<div class="grid-section popup-contact-form-grid">
 								<p>
 									<input type="text" name="name" id="name" placeholder="Name" value required>
@@ -283,6 +283,7 @@
 									<!-- <input type="text" name="message" id="message" placeholder="Message" value>  -->
 								</p>
 							</div>
+							<div data-netlify-recaptcha="true"></div>
 							<button type="submit" class="section green-blue-primary-button">REQUEST QUOTE</button>
 						</form>
 					</div>
