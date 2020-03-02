@@ -1677,4 +1677,13 @@ nav ul li ul li a {
     line-height: 3rem;
   }
 }
+
+.g-recaptcha {
+  text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+    margin-top: -5px;
+}
 /*# sourceMappingURL=style.css.map */
