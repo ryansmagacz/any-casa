@@ -124,7 +124,7 @@
 						<div class="section margin-auto" id="contact-form-section">
 							<div class="grid">
 								<p class="h2 raleway text-center" id="contact-form-title"><strong>Questions?</strong> <br>Send us a message!</p>
-								<form name="contact-page-form" method="POST" id="contact-form" netlify>
+								<form name="contact-page-form" method="POST" id="contact-form" data-netlify-recaptcha="true" netlify>
 									<div class="grid-section contact-form-grid">
 										<p>
 											<input type="text" name="name" id="name" placeholder="Name" value required>
@@ -152,6 +152,7 @@
 											<!-- <label class="hero-form-label" for="message">Message: </label> -->
 											<input type="text" name="message" id="message" placeholder="Message" value> 
 										</p>
+										<div data-netlify-recaptcha="true"></div>
 										<button type="submit" class="section green-blue-primary-button" style="padding: 1rem 0;margin: 1rem 0 0;">SEND MESSAGE</button>
 									</div>
 								</form>
