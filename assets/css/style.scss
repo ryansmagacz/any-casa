@@ -289,8 +289,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .site-wrapper, .content-wrapper{
     @extend %grid-base;
-    overflow: hidden;
 }
+
+.content-wrapper{overflow: hidden;}
 .main-grid{
     @extend %grid-base;
     grid-template-rows: $nav-height auto 100px;

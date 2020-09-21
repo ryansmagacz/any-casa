@@ -33,10 +33,9 @@
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-    overflow: hidden;
 }
 
-.site-wrapper {
+.content-wrapper {
     overflow: hidden;
 }
 
