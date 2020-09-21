@@ -1,0 +1,37 @@
+
+.navbar {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+}
+
+.navbar.transparent-navbar {
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: none;
+  width: 100%;
+}
+
+.w-nav-link, .w-dropdown-toggle {
+  padding: 0 20px;
+  line-height: 70px;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1rem;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+@media screen and (max-width: 991px) {
+  .icon {
+    font-size: 30px;
+  }
+  .nav-menu {
+    background-color: #fff;
+  }
+}

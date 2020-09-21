@@ -741,7 +741,9 @@ hr {
   
   // Container with no padding for navbar
   .nav-container {
-    max-width: $content-width-xl;
+    max-width: 1600px;
+    width: 95%;
+    padding: 0 20px;
     margin: 0 auto;
     
   }
@@ -762,13 +764,13 @@ hr {
         a,
         a:visited {
           display: block;
-          padding: 0 20px;
+          padding: 0 16px;
           line-height: $nav-height;
           background: $nav-background;
           color: $nav-font-color;
           text-transform: uppercase;
           font-weight: 300;
-          font-size: 1rem;
+          font-size: 14px;
           text-decoration: none;
           @include imantransition($quick-trans);
           
@@ -808,7 +810,7 @@ hr {
     height: $nav-height;
     width: $nav-height;
   }
-  @media only screen and (max-width: 798px) {
+  @media only screen and (max-width: 1279px) {
     // Hamburger nav visible on mobile only
     .nav-mobile {
       display: block;
