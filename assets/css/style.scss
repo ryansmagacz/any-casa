@@ -839,7 +839,7 @@ hr {
       position: static;
     }
   }
-  @media screen and (min-width: $breakpoint) {
+  @media screen and (min-width: 1280px) {
     .nav-list {
       display: block !important;
     }
