@@ -36,6 +36,10 @@
     overflow: hidden;
 }
 
+.site-wrapper {
+    overflow: hidden;
+}
+
 .section-padding, .home-intro {
   padding: 2.5rem 0;
 }
