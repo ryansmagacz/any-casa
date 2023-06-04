@@ -6,4 +6,4 @@ Disallow: /nogooglebot/
 User-agent: *
 Allow: /
 
-Sitemap: https://www.erpropertysolutions.com/sitemap.xml
+Sitemap: https://www.any.casa/sitemap.xml
