@@ -426,8 +426,8 @@ hr {
 }
 
 .green-white-primary-button:hover {
-  background: #ffffff !important;
-  color: #000000 !important;
+  background: #0062b0 !important;
+  color: #ffffff !important;
 }
 
 .white-black-primary-button {
@@ -436,8 +436,8 @@ hr {
 }
 
 .white-black-primary-button:hover {
-  background: #ffffff !important;
-  color: #000000ac !important;
+  background: #0062b0 !important;
+  color: #ffffff !important;
 }
 
 .blue-green-primary-button {
